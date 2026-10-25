@@ -1,0 +1,93 @@
+[gd_scene format=3 uid="uid://c5fajkbhpwqlv"]
+
+[ext_resource type="Script" uid="uid://dkt8tfn080cye" path="res://scripts/ui/hud.gd" id="1_hqnrr"]
+[ext_resource type="Theme" uid="uid://t5t0dcscctl" path="res://resources/ui_theme.tres" id="2_bo48s"]
+
+[node name="HUD" type="CanvasLayer" unique_id=967359750]
+layer = 10
+script = ExtResource("1_hqnrr")
+
+[node name="Panel" type="Panel" parent="." unique_id=1464863641]
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 138.0
+offset_bottom = 64.0
+theme = ExtResource("2_bo48s")
+
+[node name="HealthBack" type="ColorRect" parent="Panel" unique_id=990862378]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 126.0
+offset_bottom = 13.0
+color = Color(0.2509804, 0.101960786, 0.12156863, 1)
+
+[node name="HealthFill" type="ColorRect" parent="Panel/HealthBack" unique_id=385261150]
+layout_mode = 0
+offset_right = 120.0
+offset_bottom = 7.0
+color = Color(0.85882354, 0.25882354, 0.25882354, 1)
+
+[node name="ForestLabel" type="Label" parent="Panel" unique_id=1248394334]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 14.0
+offset_right = 130.0
+offset_bottom = 28.0
+text = "Forest: 100%"
+
+[node name="CampsLabel" type="Label" parent="Panel" unique_id=1319654995]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 27.0
+offset_right = 130.0
+offset_bottom = 41.0
+text = "Camps cleared: 0/3"
+
+[node name="WoodLabel" type="Label" parent="Panel" unique_id=1639320579]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 40.0
+offset_right = 130.0
+offset_bottom = 54.0
+text = "Wood stolen: 0"
+
+[node name="Message" type="Label" parent="." unique_id=186231651]
+offset_left = 40.0
+offset_top = 300.0
+offset_right = 600.0
+offset_bottom = 330.0
+theme = ExtResource("2_bo48s")
+horizontal_alignment = 1
+
+[node name="Controls" type="Label" parent="." unique_id=540175164]
+modulate = Color(1, 1, 1, 0.7490196)
+offset_left = 6.0
+offset_top = 342.0
+offset_right = 634.0
+offset_bottom = 356.0
+theme = ExtResource("2_bo48s")
+theme_type_variation = &"SmallLabel"
+text = "WASD move   Shift sneak   Space dash   Click shoot   Hide in bushes"
+
+[node name="EndScreen" type="ColorRect" parent="." unique_id=678872716]
+visible = false
+offset_right = 640.0
+offset_bottom = 360.0
+theme = ExtResource("2_bo48s")
+color = Color(0.050980393, 0.039215688, 0.05882353, 0.7019608)
+
+[node name="Title" type="Label" parent="EndScreen" unique_id=474677134]
+layout_mode = 0
+offset_top = 140.0
+offset_right = 640.0
+offset_bottom = 170.0
+theme_type_variation = &"BigLabel"
+horizontal_alignment = 1
+
+[node name="Hint" type="Label" parent="EndScreen" unique_id=1277055448]
+layout_mode = 0
+offset_top = 182.0
+offset_right = 640.0
+offset_bottom = 202.0
+horizontal_alignment = 1

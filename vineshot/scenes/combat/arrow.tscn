@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cgg8mhuaxnuu8"]
+
+[ext_resource type="Script" uid="uid://ba8g46vg738gu" path="res://scripts/combat/projectile.gd" id="1_cmm67"]
+[ext_resource type="Texture2D" uid="uid://bp06cptbq2nr3" path="res://art/effects/png/arrow.png" id="2_et6jx"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2axpv"]
+radius = 3.0
+
+[node name="Arrow" type="Area2D" unique_id=39667303]
+collision_layer = 0
+script = ExtResource("1_cmm67")
+speed = 330.0
+damage = 34.0
+lifetime = 0.9
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=956474352]
+texture = ExtResource("2_et6jx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=927616243]
+shape = SubResource("CircleShape2D_2axpv")

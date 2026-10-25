@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://dpt1i03yksg4t"]
+
+[ext_resource type="Script" uid="uid://cr2rxlualnqig" path="res://scripts/world/camp.gd" id="1_m516s"]
+[ext_resource type="SpriteFrames" uid="uid://bjt53ap3dr517" path="res://resources/frames/campfire.tres" id="2_b25lb"]
+[ext_resource type="Texture2D" uid="uid://cdyh1edf81js6" path="res://art/camp/png/tent.png" id="3_b25lb"]
+[ext_resource type="Script" uid="uid://bvn6awrwb1qjk" path="res://scripts/world/wood_storage.gd" id="4_oxxrb"]
+[ext_resource type="SpriteFrames" uid="uid://d0373emt60qo2" path="res://resources/frames/wood_storage.tres" id="5_mut6b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_amaji"]
+size = Vector2(40, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5a4ej"]
+size = Vector2(30, 8)
+
+[node name="Camp" type="Node2D" unique_id=4682231]
+y_sort_enabled = true
+script = ExtResource("1_m516s")
+
+[node name="Campfire" type="AnimatedSprite2D" parent="." unique_id=223256328]
+sprite_frames = ExtResource("2_b25lb")
+animation = &"burn"
+offset = Vector2(0, -11)
+
+[node name="Tent" type="StaticBody2D" parent="." unique_id=1445798477]
+position = Vector2(-46, -14)
+
+[node name="Sprite2D" type="Sprite2D" parent="Tent" unique_id=1984058304]
+texture = ExtResource("3_b25lb")
+offset = Vector2(0, -15)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tent" unique_id=214894270]
+position = Vector2(0, -6)
+shape = SubResource("RectangleShape2D_amaji")
+
+[node name="WoodStorage" type="StaticBody2D" parent="." unique_id=804977442]
+position = Vector2(44, -6)
+script = ExtResource("4_oxxrb")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="WoodStorage" unique_id=1907849596]
+sprite_frames = ExtResource("5_mut6b")
+animation = &"empty"
+offset = Vector2(0, -12)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WoodStorage" unique_id=1191037836]
+position = Vector2(0, -4)
+shape = SubResource("RectangleShape2D_5a4ej")

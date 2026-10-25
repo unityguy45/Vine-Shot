@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://gdvysw1vv83w"]
+
+[ext_resource type="Script" uid="uid://do0asuxl5q8s5" path="res://scripts/enemies/guard.gd" id="1_k5p1f"]
+[ext_resource type="SpriteFrames" uid="uid://b8t2km1e5lyqt" path="res://resources/frames/guard.tres" id="2_bgj1j"]
+[ext_resource type="SpriteFrames" uid="uid://dk01kr6m0akai" path="res://resources/frames/alert.tres" id="3_sgj1j"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_sgj1j"]
+radius = 4.0
+
+[node name="Guard" type="CharacterBody2D" unique_id=228692861]
+collision_layer = 4
+motion_mode = 1
+script = ExtResource("1_k5p1f")
+max_health = 110.0
+walk_speed = 30.0
+run_speed = 66.0
+vision_range = 115.0
+vision_angle = 80.0
+attack_damage = 12.0
+attack_cooldown = 1.3
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2081312101]
+sprite_frames = ExtResource("2_bgj1j")
+animation = &"idle"
+offset = Vector2(0, -14)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=443446271]
+position = Vector2(0, -3)
+shape = SubResource("CircleShape2D_sgj1j")
+
+[node name="VisionCone" type="Polygon2D" parent="." unique_id=2076404698]
+z_index = -5
+position = Vector2(0, -4)
+color = Color(1, 0.9490196, 0.54901963, 0.16078432)
+
+[node name="Mark" type="AnimatedSprite2D" parent="." unique_id=1270610389]
+visible = false
+z_index = 5
+position = Vector2(0, -36)
+sprite_frames = ExtResource("3_sgj1j")
+animation = &"bounce"

@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://osnlgnlk0mla"]
+
+[ext_resource type="Script" uid="uid://dwxcpa8mm05cp" path="res://scripts/world/forest_tree.gd" id="1_lk8vb"]
+[ext_resource type="SpriteFrames" uid="uid://b0iii1hqpck7b" path="res://resources/frames/oak.tres" id="2_pxvfk"]
+[ext_resource type="Texture2D" uid="uid://b3v7xm80fhdgs" path="res://art/trees/png/stump.png" id="3_eoqqh"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lk8vb"]
+radius = 5.0
+
+[node name="OakTree" type="StaticBody2D" unique_id=1396274139]
+collision_mask = 0
+script = ExtResource("1_lk8vb")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2061850773]
+sprite_frames = ExtResource("2_pxvfk")
+animation = &"sway"
+offset = Vector2(0, -23)
+
+[node name="Stump" type="Sprite2D" parent="." unique_id=1817980438]
+visible = false
+texture = ExtResource("3_eoqqh")
+offset = Vector2(0, -7)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=282802878]
+position = Vector2(0, -3)
+shape = SubResource("CircleShape2D_lk8vb")

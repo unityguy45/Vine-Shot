@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://8st53y6rmr62"]
+
+[ext_resource type="Script" uid="uid://cy4mehf6w24kv" path="res://scripts/world/bush.gd" id="1_7twwl"]
+[ext_resource type="SpriteFrames" uid="uid://cbeg6xkwm3cgs" path="res://resources/frames/bush.tres" id="2_5k5rv"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8c1ak"]
+
+[node name="Bush" type="Area2D" unique_id=229778195]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_7twwl")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=617380330]
+sprite_frames = ExtResource("2_5k5rv")
+animation = &"idle"
+offset = Vector2(0, -8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1214259589]
+position = Vector2(0, -5)
+shape = SubResource("CircleShape2D_8c1ak")

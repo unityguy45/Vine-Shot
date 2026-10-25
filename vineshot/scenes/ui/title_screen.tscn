@@ -1,0 +1,146 @@
+[gd_scene format=3 uid="uid://bry2ya3dkdknj"]
+
+[ext_resource type="Theme" uid="uid://t5t0dcscctl" path="res://resources/ui_theme.tres" id="1_aqpy5"]
+[ext_resource type="Script" uid="uid://dkyx5haqj64nb" path="res://scripts/ui/title_screen.gd" id="2_w8uqo"]
+[ext_resource type="SpriteFrames" uid="uid://b0iii1hqpck7b" path="res://resources/frames/oak.tres" id="3_w8uqo"]
+[ext_resource type="SpriteFrames" uid="uid://cr6o8lnct5mlw" path="res://resources/frames/pine.tres" id="4_a4ium"]
+[ext_resource type="Texture2D" uid="uid://b28lkn3s7y8fh" path="res://art/ui/title_logo.png" id="5_r23qo"]
+[ext_resource type="SpriteFrames" uid="uid://cesmhjswtugbv" path="res://resources/frames/archer.tres" id="6_cfe2f"]
+
+[node name="TitleScreen" type="Control" unique_id=72632934]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 640.0
+offset_bottom = 360.0
+theme = ExtResource("1_aqpy5")
+script = ExtResource("2_w8uqo")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1499771363]
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 360.0
+color = Color(0.49019608, 0.76862746, 0.38039216, 1)
+
+[node name="Trees" type="Node2D" parent="." unique_id=560457624]
+y_sort_enabled = true
+
+[node name="Tree" type="AnimatedSprite2D" parent="Trees" unique_id=2036979638]
+position = Vector2(28, 120)
+scale = Vector2(2, 2)
+sprite_frames = ExtResource("3_w8uqo")
+animation = &"sway"
+offset = Vector2(0, -23)
+
+[node name="Tree10" type="AnimatedSprite2D" parent="Trees" unique_id=1193241326]
+position = Vector2(480, 70)
+scale = Vector2(2, 2)
+sprite_frames = ExtResource("3_w8uqo")
+animation = &"sway"
+offset = Vector2(0, -23)
+
+[node name="Tree9" type="AnimatedSprite2D" parent="Trees" unique_id=955938574]
+position = Vector2(160, 70)
+scale = Vector2(2, 2)
+sprite_frames = ExtResource("4_a4ium")
+animation = &"sway"
+offset = Vector2(0, -23)
+
+[node name="Tree8" type="AnimatedSprite2D" parent="Trees" unique_id=664914031]
+position = Vector2(530, 352)
+scale = Vector2(2, 2)
+sprite_frames = ExtResource("3_w8uqo")
+animation = &"sway"
+offset = Vector2(0, -23)
+
+[node name="Tree7" type="AnimatedSprite2D" parent="Trees" unique_id=1589019026]
+position = Vector2(616, 300)
+scale = Vector2(2, 2)
+sprite_frames = ExtResource("3_w8uqo")
+animation = &"sway"
+offset = Vector2(0, -23)
+
+[node name="Tree6" type="AnimatedSprite2D" parent="Trees" unique_id=1677449731]
+position = Vector2(570, 210)
+scale = Vector2(2, 2)
+sprite_frames = ExtResource("4_a4ium")
+animation = &"sway"
+offset = Vector2(0, -23)
+
+[node name="Tree5" type="AnimatedSprite2D" parent="Trees" unique_id=675497712]
+position = Vector2(612, 120)
+scale = Vector2(2, 2)
+sprite_frames = ExtResource("3_w8uqo")
+animation = &"sway"
+offset = Vector2(0, -23)
+
+[node name="Tree4" type="AnimatedSprite2D" parent="Trees" unique_id=111735592]
+position = Vector2(110, 350)
+scale = Vector2(2, 2)
+sprite_frames = ExtResource("3_w8uqo")
+animation = &"sway"
+offset = Vector2(0, -23)
+
+[node name="Tree3" type="AnimatedSprite2D" parent="Trees" unique_id=377945283]
+position = Vector2(24, 300)
+scale = Vector2(2, 2)
+sprite_frames = ExtResource("3_w8uqo")
+animation = &"sway"
+offset = Vector2(0, -23)
+
+[node name="Tree2" type="AnimatedSprite2D" parent="Trees" unique_id=1661100366]
+position = Vector2(70, 200)
+scale = Vector2(2, 2)
+sprite_frames = ExtResource("4_a4ium")
+animation = &"sway"
+offset = Vector2(0, -23)
+
+[node name="Logo" type="TextureRect" parent="." unique_id=1354821273]
+layout_mode = 0
+offset_left = 116.0
+offset_top = 10.0
+offset_right = 524.0
+offset_bottom = 130.0
+texture = ExtResource("5_r23qo")
+expand_mode = 1
+
+[node name="Subtitle" type="Label" parent="." unique_id=897622789]
+layout_mode = 0
+offset_top = 138.0
+offset_right = 640.0
+offset_bottom = 156.0
+theme_type_variation = &"MediumLabel"
+text = "Defend the forest"
+horizontal_alignment = 1
+
+[node name="ArcherPreview" type="AnimatedSprite2D" parent="." unique_id=954510642]
+position = Vector2(320, 250)
+scale = Vector2(3, 3)
+sprite_frames = ExtResource("6_cfe2f")
+animation = &"idle"
+offset = Vector2(0, -14)
+
+[node name="PlayButton" type="Button" parent="." unique_id=1526645989]
+layout_mode = 0
+offset_left = 270.0
+offset_top = 264.0
+offset_right = 370.0
+offset_bottom = 288.0
+text = "Play"
+
+[node name="Info" type="Label" parent="." unique_id=2091614104]
+layout_mode = 0
+offset_left = 220.0
+offset_top = 295.0
+offset_right = 420.0
+offset_bottom = 309.0
+theme_type_variation = &"SmallLabel"
+text = "Swift arrows, quiet steps"
+horizontal_alignment = 1
+
+[node name="QuitButton" type="Button" parent="." unique_id=318770927]
+layout_mode = 0
+offset_left = 285.0
+offset_top = 324.0
+offset_right = 355.0
+offset_bottom = 344.0
+text = "Quit"

@@ -1,0 +1,35 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://cbeg6xkwm3cgs"]
+
+[ext_resource type="Texture2D" uid="uid://qebcoujl3w1" path="res://art/trees/png/bush/idle/idle_0.png" id="1_w8jbb"]
+[ext_resource type="Texture2D" uid="uid://ch8i87u4no8ki" path="res://art/trees/png/bush/rustle/rustle_0.png" id="2_11iyc"]
+[ext_resource type="Texture2D" uid="uid://c1ruvxovlp87g" path="res://art/trees/png/bush/rustle/rustle_1.png" id="3_7jl8m"]
+[ext_resource type="Texture2D" uid="uid://c5dcn3pdb73qy" path="res://art/trees/png/bush/rustle/rustle_2.png" id="4_daby1"]
+[ext_resource type="Texture2D" uid="uid://crf26ulyxxydk" path="res://art/trees/png/bush/rustle/rustle_3.png" id="5_5ggbv"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_w8jbb")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_11iyc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_7jl8m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_daby1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_5ggbv")
+}],
+"loop": false,
+"name": &"rustle",
+"speed": 12.0
+}]

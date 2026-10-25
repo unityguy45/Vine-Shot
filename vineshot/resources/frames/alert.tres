@@ -1,0 +1,22 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://dk01kr6m0akai"]
+
+[ext_resource type="Texture2D" uid="uid://ganry0au017n" path="res://art/effects/png/alert/bounce/bounce_0.png" id="1_buscu"]
+[ext_resource type="Texture2D" uid="uid://clrgynkldefky" path="res://art/effects/png/alert/bounce/bounce_1.png" id="2_rn8vl"]
+[ext_resource type="Texture2D" uid="uid://cbn52eihq02vb" path="res://art/effects/png/alert/bounce/bounce_2.png" id="3_tc0tk"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_buscu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_rn8vl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_tc0tk")
+}],
+"loop": true,
+"name": &"bounce",
+"speed": 10.0
+}]

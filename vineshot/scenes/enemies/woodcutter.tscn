@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://bo1u4fm751jry"]
+
+[ext_resource type="Script" uid="uid://cbipic7gfemvl" path="res://scripts/enemies/woodcutter.gd" id="1_eui3s"]
+[ext_resource type="SpriteFrames" uid="uid://dvy8hp5tn8cs7" path="res://resources/frames/woodcutter.tres" id="2_y0i1m"]
+[ext_resource type="SpriteFrames" uid="uid://dk01kr6m0akai" path="res://resources/frames/alert.tres" id="3_bqlb4"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_c0q5n"]
+radius = 4.0
+
+[node name="Woodcutter" type="CharacterBody2D" unique_id=2094183259]
+collision_layer = 4
+motion_mode = 1
+script = ExtResource("1_eui3s")
+run_speed = 68.0
+attack_damage = 8.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=6862107]
+sprite_frames = ExtResource("2_y0i1m")
+animation = &"idle"
+offset = Vector2(0, -14)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=117624500]
+position = Vector2(0, -3)
+shape = SubResource("CircleShape2D_c0q5n")
+
+[node name="VisionCone" type="Polygon2D" parent="." unique_id=1186287007]
+z_index = -5
+position = Vector2(0, -4)
+color = Color(1, 0.9490196, 0.54901963, 0.16078432)
+
+[node name="Mark" type="AnimatedSprite2D" parent="." unique_id=724829505]
+visible = false
+z_index = 5
+position = Vector2(0, -36)
+sprite_frames = ExtResource("3_bqlb4")
+animation = &"bounce"

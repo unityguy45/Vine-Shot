@@ -1,0 +1,6 @@
+[gd_resource type="TileSet" format=3 uid="uid://hutke7us5k3c"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k8wwq"]
+
+[resource]
+sources/0 = SubResource("TileSetAtlasSource_k8wwq")

@@ -1,0 +1,26 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://cp2c4m1praqlf"]
+
+[ext_resource type="Texture2D" uid="uid://dul5o7qyjvxx" path="res://art/effects/png/poof/poof/poof_0.png" id="1_3i7u0"]
+[ext_resource type="Texture2D" uid="uid://o3x7a844w706" path="res://art/effects/png/poof/poof/poof_1.png" id="2_uts3b"]
+[ext_resource type="Texture2D" uid="uid://bkrm324dqitv7" path="res://art/effects/png/poof/poof/poof_2.png" id="3_ykunj"]
+[ext_resource type="Texture2D" uid="uid://bm8stw8mwgkpk" path="res://art/effects/png/poof/poof/poof_3.png" id="4_cgurh"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_3i7u0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_uts3b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ykunj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_cgurh")
+}],
+"loop": false,
+"name": &"poof",
+"speed": 12.0
+}]

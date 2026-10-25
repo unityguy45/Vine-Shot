@@ -1,0 +1,41 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://d0373emt60qo2"]
+
+[ext_resource type="Texture2D" uid="uid://crinppsuwy8ps" path="res://art/camp/png/wood_storage/empty/empty_0.png" id="1_lvhr7"]
+[ext_resource type="Texture2D" uid="uid://d344pmtdxe6pl" path="res://art/camp/png/wood_storage/full/full_0.png" id="2_gbl6g"]
+[ext_resource type="Texture2D" uid="uid://gw3hg1862t5i" path="res://art/camp/png/wood_storage/half/half_0.png" id="3_41sdv"]
+[ext_resource type="Texture2D" uid="uid://wp61j8sire38" path="res://art/camp/png/wood_storage/low/low_0.png" id="4_54ja2"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_lvhr7")
+}],
+"loop": false,
+"name": &"empty",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_gbl6g")
+}],
+"loop": false,
+"name": &"full",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_41sdv")
+}],
+"loop": false,
+"name": &"half",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_54ja2")
+}],
+"loop": false,
+"name": &"low",
+"speed": 10.0
+}]

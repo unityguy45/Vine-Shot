@@ -1,0 +1,50 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://b7nny11e14jcx"]
+
+[ext_resource type="Texture2D" uid="uid://dytfcsd4tgl2e" path="res://art/trees/png/oak_fall/fall/fall_0.png" id="1_e8xqk"]
+[ext_resource type="Texture2D" uid="uid://dskwkan6nnn21" path="res://art/trees/png/oak_fall/fall/fall_1.png" id="2_vguib"]
+[ext_resource type="Texture2D" uid="uid://dnw16iqsst35g" path="res://art/trees/png/oak_fall/fall/fall_2.png" id="3_jgypq"]
+[ext_resource type="Texture2D" uid="uid://bysgganhapafk" path="res://art/trees/png/oak_fall/fall/fall_3.png" id="4_jdwin"]
+[ext_resource type="Texture2D" uid="uid://do0qhuu7luarj" path="res://art/trees/png/oak_fall/fall/fall_4.png" id="5_20n2u"]
+[ext_resource type="Texture2D" uid="uid://btsdn3rwajejw" path="res://art/trees/png/oak_fall/fall/fall_5.png" id="6_kg3s6"]
+[ext_resource type="Texture2D" uid="uid://ddqvm17qqt7ii" path="res://art/trees/png/oak_fall/fall/fall_6.png" id="7_qlclc"]
+[ext_resource type="Texture2D" uid="uid://ctrjk0w3wu2i5" path="res://art/trees/png/oak_fall/fall/fall_7.png" id="8_rc884"]
+[ext_resource type="Texture2D" uid="uid://c6f2gib032pga" path="res://art/trees/png/oak_fall/fall/fall_8.png" id="9_iku2s"]
+[ext_resource type="Texture2D" uid="uid://tv3vrokjxns8" path="res://art/trees/png/oak_fall/fall/fall_9.png" id="10_pm6i3"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_e8xqk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_vguib")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_jgypq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_jdwin")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_20n2u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_kg3s6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_qlclc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_rc884")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_iku2s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_pm6i3")
+}],
+"loop": false,
+"name": &"fall",
+"speed": 11.0
+}]

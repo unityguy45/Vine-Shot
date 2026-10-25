@@ -1,0 +1,26 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://mefxlgqy8icn"]
+
+[ext_resource type="Texture2D" uid="uid://bw6xfl6ov7msy" path="res://art/effects/png/potion/spin/spin_0.png" id="1_sb7w6"]
+[ext_resource type="Texture2D" uid="uid://br4ght6s684w4" path="res://art/effects/png/potion/spin/spin_1.png" id="2_m2nlb"]
+[ext_resource type="Texture2D" uid="uid://jynwjbcwvqs1" path="res://art/effects/png/potion/spin/spin_2.png" id="3_xcx0u"]
+[ext_resource type="Texture2D" uid="uid://2rs4hmarv5ll" path="res://art/effects/png/potion/spin/spin_3.png" id="4_eelfl"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_sb7w6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_m2nlb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_xcx0u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_eelfl")
+}],
+"loop": true,
+"name": &"spin",
+"speed": 14.0
+}]

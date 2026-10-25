@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://cyvaebnxwve28"]
+
+[ext_resource type="Script" uid="uid://p45dmx267sc6" path="res://scripts/player/player.gd" id="1_dovo2"]
+[ext_resource type="SpriteFrames" uid="uid://cesmhjswtugbv" path="res://resources/frames/archer.tres" id="2_gmlin"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lvxji"]
+radius = 4.0
+
+[node name="Player" type="CharacterBody2D" unique_id=519562388]
+collision_layer = 2
+motion_mode = 1
+script = ExtResource("1_dovo2")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1055354285]
+sprite_frames = ExtResource("2_gmlin")
+animation = &"idle"
+offset = Vector2(0, -14)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1882820375]
+position = Vector2(0, -3)
+shape = SubResource("CircleShape2D_lvxji")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1384318958]
+process_callback = 0
+position_smoothing_enabled = true
+position_smoothing_speed = 6.0

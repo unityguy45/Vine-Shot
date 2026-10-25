@@ -1,0 +1,47 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://cr6o8lnct5mlw"]
+
+[ext_resource type="Texture2D" uid="uid://cf4n7llrx1ysh" path="res://art/trees/png/pine/hit/hit_0.png" id="1_ka24m"]
+[ext_resource type="Texture2D" uid="uid://cy1aj7a7lhpn5" path="res://art/trees/png/pine/hit/hit_1.png" id="2_s04ix"]
+[ext_resource type="Texture2D" uid="uid://qdth110ydhkx" path="res://art/trees/png/pine/hit/hit_2.png" id="3_6mku5"]
+[ext_resource type="Texture2D" uid="uid://3y50me53pnfn" path="res://art/trees/png/pine/hit/hit_3.png" id="4_7slls"]
+[ext_resource type="Texture2D" uid="uid://d013mkaobft1c" path="res://art/trees/png/pine/sway/sway_0.png" id="5_ja877"]
+[ext_resource type="Texture2D" uid="uid://w1xql8ntc8a4" path="res://art/trees/png/pine/sway/sway_1.png" id="6_gkkeg"]
+[ext_resource type="Texture2D" uid="uid://ddkcgcpkm657q" path="res://art/trees/png/pine/sway/sway_2.png" id="7_nvq8n"]
+[ext_resource type="Texture2D" uid="uid://h5ac8lbgm2km" path="res://art/trees/png/pine/sway/sway_3.png" id="8_qqks2"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ka24m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_s04ix")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_6mku5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_7slls")
+}],
+"loop": false,
+"name": &"hit",
+"speed": 16.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_ja877")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_gkkeg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_nvq8n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_qqks2")
+}],
+"loop": true,
+"name": &"sway",
+"speed": 4.0
+}]

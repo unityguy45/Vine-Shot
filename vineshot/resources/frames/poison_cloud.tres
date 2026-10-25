@@ -1,0 +1,30 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://ci8jmth62o7q7"]
+
+[ext_resource type="Texture2D" uid="uid://cnbwmity0q0h2" path="res://art/effects/png/poison_cloud/puff/puff_0.png" id="1_qwnjj"]
+[ext_resource type="Texture2D" uid="uid://cdj2654j6he76" path="res://art/effects/png/poison_cloud/puff/puff_1.png" id="2_jrr6k"]
+[ext_resource type="Texture2D" uid="uid://chjf7fbiyaapu" path="res://art/effects/png/poison_cloud/puff/puff_2.png" id="3_5d4pg"]
+[ext_resource type="Texture2D" uid="uid://c0a1a8b1hkae3" path="res://art/effects/png/poison_cloud/puff/puff_3.png" id="4_n8nxg"]
+[ext_resource type="Texture2D" uid="uid://diplh61igxv1f" path="res://art/effects/png/poison_cloud/puff/puff_4.png" id="5_0vklo"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_qwnjj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_jrr6k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_5d4pg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_n8nxg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_0vklo")
+}],
+"loop": false,
+"name": &"puff",
+"speed": 12.0
+}]
