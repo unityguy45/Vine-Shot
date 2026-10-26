@@ -18,14 +18,16 @@ func _work(delta: float) -> void:
 	var center: Vector2 = global_position
 	if camp and is_instance_valid(camp):
 		center = camp.global_position
+	var guarded := alert_level() >= 2
 	if _wait > 0.0:
 		_stand()
 		_wait -= delta
 		if not _turned and _wait < look_time * 0.5:
 			_turned = true
-			_face(-facing)
+			_face(facing.rotated(PI + randf_range(-0.6, 0.6)))
 		return
-	if _move_to(center + _points[_index], walk_speed, delta):
-		_wait = look_time
+	var reach := 1.45 if guarded else 1.0
+	if _move_to(center + _points[_index] * reach, walk_speed * (1.35 if guarded else 1.0), delta):
+		_wait = look_time * (0.7 if guarded else 1.0)
 		_turned = false
 		_index = (_index + 1) % _points.size()

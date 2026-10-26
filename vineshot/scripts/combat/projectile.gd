@@ -5,12 +5,10 @@ extends Area2D
 @export var lifetime: float = 1.0
 @export var impact_effect: String = ""
 @export var hit_radius: float = 9.0
-@export var pierce: int = 0
 
 var direction: Vector2 = Vector2.RIGHT
 var _life: float = 0.0
 var _done: bool = false
-var _hit: Array = []
 @onready var game_state = get_node("/root/GameState")
 
 func _ready() -> void:
@@ -33,15 +31,11 @@ func _physics_process(delta: float) -> void:
 	_life += delta
 	for n in get_tree().get_nodes_in_group("enemies"):
 		var enemy = n
-		if enemy.health <= 0.0 or enemy in _hit:
+		if enemy.health <= 0.0:
 			continue
 		if global_position.distance_to(enemy.global_position + Vector2(0, -10)) < hit_radius:
 			enemy.take_hit(damage, global_position - direction * 8.0)
-			_hit.append(enemy)
-			if pierce > 0:
-				pierce -= 1
-				continue
-			_impact()
+			_impact(false)
 			return
 	if _life >= lifetime:
 		_impact()
@@ -51,12 +45,17 @@ func _on_body_entered(body) -> void:
 		return
 	if body.has_method("take_hit"):
 		body.take_hit(damage, global_position - direction * 8.0)
+		_impact(false)
+		return
 	_impact()
 
-func _impact() -> void:
+func _impact(missed: bool = true) -> void:
 	if _done:
 		return
 	_done = true
+	if missed:
+		game_state.play_sfx("arrow_miss", global_position, -4.0, 0.15)
+		game_state.make_noise(global_position, 75.0)
 	if impact_effect != "":
 		game_state.spawn_effect(get_parent(), impact_effect, impact_effect, global_position)
 	queue_free()

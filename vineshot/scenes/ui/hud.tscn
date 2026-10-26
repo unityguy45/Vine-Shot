@@ -68,7 +68,7 @@ offset_right = 634.0
 offset_bottom = 356.0
 theme = ExtResource("2_bo48s")
 theme_type_variation = &"SmallLabel"
-text = "WASD move   Shift sneak   Space dash   Click shoot   Hide in bushes"
+text = "WASD move   Shift sneak   Space dash   Click shoot   G drag body   Hide in bushes"
 
 [node name="EndScreen" type="ColorRect" parent="." unique_id=678872716]
 visible = false
@@ -79,15 +79,30 @@ color = Color(0.050980393, 0.039215688, 0.05882353, 0.7019608)
 
 [node name="Title" type="Label" parent="EndScreen" unique_id=474677134]
 layout_mode = 0
-offset_top = 140.0
+offset_top = 92.0
 offset_right = 640.0
-offset_bottom = 170.0
+offset_bottom = 122.0
 theme_type_variation = &"BigLabel"
 horizontal_alignment = 1
 
 [node name="Hint" type="Label" parent="EndScreen" unique_id=1277055448]
 layout_mode = 0
-offset_top = 182.0
+offset_top = 214.0
 offset_right = 640.0
-offset_bottom = 202.0
+offset_bottom = 234.0
+horizontal_alignment = 1
+
+[node name="Stats" type="Label" parent="EndScreen" unique_id=1243617949]
+layout_mode = 0
+offset_top = 134.0
+offset_right = 640.0
+offset_bottom = 198.0
+horizontal_alignment = 1
+
+[node name="AlertLabel" type="Label" parent="." unique_id=1761408621]
+offset_left = 170.0
+offset_top = 6.0
+offset_right = 470.0
+offset_bottom = 20.0
+theme = ExtResource("2_bo48s")
 horizontal_alignment = 1

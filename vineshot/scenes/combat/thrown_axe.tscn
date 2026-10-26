@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://d3kr3xt3704ot"]
+
+[ext_resource type="Script" uid="uid://bbqe8e5nhus5d" path="res://scripts/combat/thrown_axe.gd" id="1_f5bgr"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xfa4j"]
+radius = 3.0
+
+[node name="ThrownAxe" type="Area2D" unique_id=888735764]
+z_index = 2
+collision_layer = 0
+script = ExtResource("1_f5bgr")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1271860489]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1567055031]
+shape = SubResource("CircleShape2D_xfa4j")

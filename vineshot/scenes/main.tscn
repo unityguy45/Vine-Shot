@@ -6,10 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://cyvaebnxwve28" path="res://scenes/player/player.tscn" id="4_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://c5fajkbhpwqlv" path="res://scenes/ui/hud.tscn" id="5_tbgi4"]
 [ext_resource type="PackedScene" uid="uid://osnlgnlk0mla" path="res://scenes/world/oak_tree.tscn" id="5_ya4ey"]
-[ext_resource type="Script" uid="uid://dwxcpa8mm05cp" path="res://scripts/world/forest_tree.gd" id="6_eb6dy"]
 [ext_resource type="PackedScene" uid="uid://buhlqjqgmdics" path="res://scenes/world/pine_tree.tscn" id="7_trceg"]
 [ext_resource type="PackedScene" uid="uid://8st53y6rmr62" path="res://scenes/world/bush.tscn" id="8_a8y0u"]
-[ext_resource type="Script" uid="uid://cy4mehf6w24kv" path="res://scripts/world/bush.gd" id="9_jkv2x"]
 [ext_resource type="PackedScene" uid="uid://nig2m4rnnat2" path="res://scenes/world/rock.tscn" id="10_jbj1t"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sugp2"]
@@ -70,1925 +68,1076 @@ position = Vector2(640, 450)
 [node name="Trees" type="Node2D" parent="World" unique_id=923023666]
 y_sort_enabled = true
 
-[node name="OakTree0" type="StaticBody2D" parent="World/Trees" unique_id=1396274139 instance=ExtResource("5_ya4ey")]
+[node name="OakTree0" parent="World/Trees" unique_id=1396274139 instance=ExtResource("5_ya4ey")]
 position = Vector2(7, 39)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree1" type="StaticBody2D" parent="World/Trees" unique_id=445439828 instance=ExtResource("5_ya4ey")]
+[node name="OakTree1" parent="World/Trees" unique_id=445439828 instance=ExtResource("5_ya4ey")]
 position = Vector2(63, 24)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree2" type="StaticBody2D" parent="World/Trees" unique_id=1796056370 instance=ExtResource("7_trceg")]
+[node name="PineTree2" parent="World/Trees" unique_id=1796056370 instance=ExtResource("7_trceg")]
 position = Vector2(106, 34)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree3" type="StaticBody2D" parent="World/Trees" unique_id=199325677 instance=ExtResource("7_trceg")]
+[node name="PineTree3" parent="World/Trees" unique_id=199325677 instance=ExtResource("7_trceg")]
 position = Vector2(130, 38)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree4" type="StaticBody2D" parent="World/Trees" unique_id=1106508760 instance=ExtResource("5_ya4ey")]
+[node name="OakTree4" parent="World/Trees" unique_id=1106508760 instance=ExtResource("5_ya4ey")]
 position = Vector2(153, 21)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree5" type="StaticBody2D" parent="World/Trees" unique_id=223653377 instance=ExtResource("7_trceg")]
+[node name="PineTree5" parent="World/Trees" unique_id=223653377 instance=ExtResource("7_trceg")]
 position = Vector2(195, 22)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree6" type="StaticBody2D" parent="World/Trees" unique_id=1875195271 instance=ExtResource("7_trceg")]
+[node name="PineTree6" parent="World/Trees" unique_id=1875195271 instance=ExtResource("7_trceg")]
 position = Vector2(227, 33)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree7" type="StaticBody2D" parent="World/Trees" unique_id=1499758501 instance=ExtResource("7_trceg")]
+[node name="PineTree7" parent="World/Trees" unique_id=1499758501 instance=ExtResource("7_trceg")]
 position = Vector2(248, 23)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree8" type="StaticBody2D" parent="World/Trees" unique_id=281928061 instance=ExtResource("7_trceg")]
+[node name="PineTree8" parent="World/Trees" unique_id=281928061 instance=ExtResource("7_trceg")]
 position = Vector2(289, 34)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree9" type="StaticBody2D" parent="World/Trees" unique_id=2100154775 instance=ExtResource("7_trceg")]
+[node name="PineTree9" parent="World/Trees" unique_id=2100154775 instance=ExtResource("7_trceg")]
 position = Vector2(310, 21)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree10" type="StaticBody2D" parent="World/Trees" unique_id=789084964 instance=ExtResource("7_trceg")]
+[node name="PineTree10" parent="World/Trees" unique_id=789084964 instance=ExtResource("7_trceg")]
 position = Vector2(343, 29)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree11" type="StaticBody2D" parent="World/Trees" unique_id=904978047 instance=ExtResource("5_ya4ey")]
+[node name="OakTree11" parent="World/Trees" unique_id=904978047 instance=ExtResource("5_ya4ey")]
 position = Vector2(373, 24)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree12" type="StaticBody2D" parent="World/Trees" unique_id=1313255077 instance=ExtResource("5_ya4ey")]
+[node name="OakTree12" parent="World/Trees" unique_id=1313255077 instance=ExtResource("5_ya4ey")]
 position = Vector2(402, 29)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree13" type="StaticBody2D" parent="World/Trees" unique_id=740233851 instance=ExtResource("5_ya4ey")]
+[node name="OakTree13" parent="World/Trees" unique_id=740233851 instance=ExtResource("5_ya4ey")]
 position = Vector2(461, 25)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree14" type="StaticBody2D" parent="World/Trees" unique_id=1847637003 instance=ExtResource("5_ya4ey")]
+[node name="OakTree14" parent="World/Trees" unique_id=1847637003 instance=ExtResource("5_ya4ey")]
 position = Vector2(491, 24)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree15" type="StaticBody2D" parent="World/Trees" unique_id=1090579650 instance=ExtResource("5_ya4ey")]
+[node name="OakTree15" parent="World/Trees" unique_id=1090579650 instance=ExtResource("5_ya4ey")]
 position = Vector2(517, 39)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree16" type="StaticBody2D" parent="World/Trees" unique_id=345565384 instance=ExtResource("5_ya4ey")]
+[node name="OakTree16" parent="World/Trees" unique_id=345565384 instance=ExtResource("5_ya4ey")]
 position = Vector2(555, 37)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree17" type="StaticBody2D" parent="World/Trees" unique_id=579641138 instance=ExtResource("7_trceg")]
+[node name="PineTree17" parent="World/Trees" unique_id=579641138 instance=ExtResource("7_trceg")]
 position = Vector2(577, 33)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree18" type="StaticBody2D" parent="World/Trees" unique_id=1181328948 instance=ExtResource("5_ya4ey")]
+[node name="OakTree18" parent="World/Trees" unique_id=1181328948 instance=ExtResource("5_ya4ey")]
 position = Vector2(609, 33)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree19" type="StaticBody2D" parent="World/Trees" unique_id=1863786903 instance=ExtResource("5_ya4ey")]
+[node name="OakTree19" parent="World/Trees" unique_id=1863786903 instance=ExtResource("5_ya4ey")]
 position = Vector2(669, 36)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree20" type="StaticBody2D" parent="World/Trees" unique_id=887226554 instance=ExtResource("5_ya4ey")]
+[node name="OakTree20" parent="World/Trees" unique_id=887226554 instance=ExtResource("5_ya4ey")]
 position = Vector2(697, 34)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree21" type="StaticBody2D" parent="World/Trees" unique_id=1178994692 instance=ExtResource("5_ya4ey")]
+[node name="OakTree21" parent="World/Trees" unique_id=1178994692 instance=ExtResource("5_ya4ey")]
 position = Vector2(735, 22)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree22" type="StaticBody2D" parent="World/Trees" unique_id=1373510166 instance=ExtResource("7_trceg")]
+[node name="PineTree22" parent="World/Trees" unique_id=1373510166 instance=ExtResource("7_trceg")]
 position = Vector2(762, 37)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree23" type="StaticBody2D" parent="World/Trees" unique_id=1140430810 instance=ExtResource("7_trceg")]
+[node name="PineTree23" parent="World/Trees" unique_id=1140430810 instance=ExtResource("7_trceg")]
 position = Vector2(791, 39)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree24" type="StaticBody2D" parent="World/Trees" unique_id=992117779 instance=ExtResource("5_ya4ey")]
+[node name="OakTree24" parent="World/Trees" unique_id=992117779 instance=ExtResource("5_ya4ey")]
 position = Vector2(853, 28)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree25" type="StaticBody2D" parent="World/Trees" unique_id=81110680 instance=ExtResource("5_ya4ey")]
+[node name="OakTree25" parent="World/Trees" unique_id=81110680 instance=ExtResource("5_ya4ey")]
 position = Vector2(888, 36)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree26" type="StaticBody2D" parent="World/Trees" unique_id=807154586 instance=ExtResource("5_ya4ey")]
+[node name="OakTree26" parent="World/Trees" unique_id=807154586 instance=ExtResource("5_ya4ey")]
 position = Vector2(911, 22)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree27" type="StaticBody2D" parent="World/Trees" unique_id=490226253 instance=ExtResource("5_ya4ey")]
+[node name="OakTree27" parent="World/Trees" unique_id=490226253 instance=ExtResource("5_ya4ey")]
 position = Vector2(941, 30)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree28" type="StaticBody2D" parent="World/Trees" unique_id=1358164871 instance=ExtResource("7_trceg")]
+[node name="PineTree28" parent="World/Trees" unique_id=1358164871 instance=ExtResource("7_trceg")]
 position = Vector2(978, 38)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree29" type="StaticBody2D" parent="World/Trees" unique_id=958227363 instance=ExtResource("7_trceg")]
+[node name="PineTree29" parent="World/Trees" unique_id=958227363 instance=ExtResource("7_trceg")]
 position = Vector2(1039, 37)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree30" type="StaticBody2D" parent="World/Trees" unique_id=1685898245 instance=ExtResource("5_ya4ey")]
+[node name="OakTree30" parent="World/Trees" unique_id=1685898245 instance=ExtResource("5_ya4ey")]
 position = Vector2(1063, 35)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree31" type="StaticBody2D" parent="World/Trees" unique_id=1903216004 instance=ExtResource("5_ya4ey")]
+[node name="OakTree31" parent="World/Trees" unique_id=1903216004 instance=ExtResource("5_ya4ey")]
 position = Vector2(1092, 24)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree32" type="StaticBody2D" parent="World/Trees" unique_id=1295011280 instance=ExtResource("7_trceg")]
+[node name="PineTree32" parent="World/Trees" unique_id=1295011280 instance=ExtResource("7_trceg")]
 position = Vector2(1116, 32)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree33" type="StaticBody2D" parent="World/Trees" unique_id=2016526292 instance=ExtResource("5_ya4ey")]
+[node name="OakTree33" parent="World/Trees" unique_id=2016526292 instance=ExtResource("5_ya4ey")]
 position = Vector2(1150, 34)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree34" type="StaticBody2D" parent="World/Trees" unique_id=1896078406 instance=ExtResource("5_ya4ey")]
+[node name="OakTree34" parent="World/Trees" unique_id=1896078406 instance=ExtResource("5_ya4ey")]
 position = Vector2(1177, 37)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree35" type="StaticBody2D" parent="World/Trees" unique_id=537559190 instance=ExtResource("7_trceg")]
+[node name="PineTree35" parent="World/Trees" unique_id=537559190 instance=ExtResource("7_trceg")]
 position = Vector2(1245, 33)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree36" type="StaticBody2D" parent="World/Trees" unique_id=980208412 instance=ExtResource("7_trceg")]
+[node name="PineTree36" parent="World/Trees" unique_id=980208412 instance=ExtResource("7_trceg")]
 position = Vector2(11, 62)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree37" type="StaticBody2D" parent="World/Trees" unique_id=1079386872 instance=ExtResource("5_ya4ey")]
+[node name="OakTree37" parent="World/Trees" unique_id=1079386872 instance=ExtResource("5_ya4ey")]
 position = Vector2(38, 52)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree38" type="StaticBody2D" parent="World/Trees" unique_id=1712457542 instance=ExtResource("7_trceg")]
+[node name="PineTree38" parent="World/Trees" unique_id=1712457542 instance=ExtResource("7_trceg")]
 position = Vector2(99, 56)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree39" type="StaticBody2D" parent="World/Trees" unique_id=2139935376 instance=ExtResource("5_ya4ey")]
+[node name="OakTree39" parent="World/Trees" unique_id=2139935376 instance=ExtResource("5_ya4ey")]
 position = Vector2(155, 60)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree40" type="StaticBody2D" parent="World/Trees" unique_id=1086086531 instance=ExtResource("5_ya4ey")]
+[node name="OakTree40" parent="World/Trees" unique_id=1086086531 instance=ExtResource("5_ya4ey")]
 position = Vector2(215, 56)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree41" type="StaticBody2D" parent="World/Trees" unique_id=1712624288 instance=ExtResource("7_trceg")]
+[node name="PineTree41" parent="World/Trees" unique_id=1712624288 instance=ExtResource("7_trceg")]
 position = Vector2(258, 58)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree42" type="StaticBody2D" parent="World/Trees" unique_id=1623961026 instance=ExtResource("5_ya4ey")]
+[node name="OakTree42" parent="World/Trees" unique_id=1623961026 instance=ExtResource("5_ya4ey")]
 position = Vector2(334, 56)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree43" type="StaticBody2D" parent="World/Trees" unique_id=1600542703 instance=ExtResource("5_ya4ey")]
+[node name="OakTree43" parent="World/Trees" unique_id=1600542703 instance=ExtResource("5_ya4ey")]
 position = Vector2(373, 58)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree44" type="StaticBody2D" parent="World/Trees" unique_id=1823072589 instance=ExtResource("7_trceg")]
+[node name="PineTree44" parent="World/Trees" unique_id=1823072589 instance=ExtResource("7_trceg")]
 position = Vector2(406, 54)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree45" type="StaticBody2D" parent="World/Trees" unique_id=1349861953 instance=ExtResource("5_ya4ey")]
+[node name="OakTree45" parent="World/Trees" unique_id=1349861953 instance=ExtResource("5_ya4ey")]
 position = Vector2(431, 56)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree46" type="StaticBody2D" parent="World/Trees" unique_id=1484393646 instance=ExtResource("7_trceg")]
+[node name="PineTree46" parent="World/Trees" unique_id=1484393646 instance=ExtResource("7_trceg")]
 position = Vector2(494, 53)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree47" type="StaticBody2D" parent="World/Trees" unique_id=1710705237 instance=ExtResource("5_ya4ey")]
+[node name="OakTree47" parent="World/Trees" unique_id=1710705237 instance=ExtResource("5_ya4ey")]
 position = Vector2(585, 55)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree48" type="StaticBody2D" parent="World/Trees" unique_id=1563365918 instance=ExtResource("5_ya4ey")]
+[node name="OakTree48" parent="World/Trees" unique_id=1563365918 instance=ExtResource("5_ya4ey")]
 position = Vector2(614, 61)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree49" type="StaticBody2D" parent="World/Trees" unique_id=1727461037 instance=ExtResource("7_trceg")]
+[node name="PineTree49" parent="World/Trees" unique_id=1727461037 instance=ExtResource("7_trceg")]
 position = Vector2(643, 55)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree50" type="StaticBody2D" parent="World/Trees" unique_id=1494670715 instance=ExtResource("7_trceg")]
+[node name="PineTree50" parent="World/Trees" unique_id=1494670715 instance=ExtResource("7_trceg")]
 position = Vector2(917, 52)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree51" type="StaticBody2D" parent="World/Trees" unique_id=1743982893 instance=ExtResource("7_trceg")]
+[node name="PineTree51" parent="World/Trees" unique_id=1743982893 instance=ExtResource("7_trceg")]
 position = Vector2(1009, 59)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree52" type="StaticBody2D" parent="World/Trees" unique_id=132478933 instance=ExtResource("7_trceg")]
+[node name="PineTree52" parent="World/Trees" unique_id=132478933 instance=ExtResource("7_trceg")]
 position = Vector2(1089, 55)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree53" type="StaticBody2D" parent="World/Trees" unique_id=508024078 instance=ExtResource("7_trceg")]
+[node name="PineTree53" parent="World/Trees" unique_id=508024078 instance=ExtResource("7_trceg")]
 position = Vector2(1214, 61)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree54" type="StaticBody2D" parent="World/Trees" unique_id=1919217836 instance=ExtResource("5_ya4ey")]
+[node name="OakTree54" parent="World/Trees" unique_id=1919217836 instance=ExtResource("5_ya4ey")]
 position = Vector2(1248, 59)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree55" type="StaticBody2D" parent="World/Trees" unique_id=1767945161 instance=ExtResource("5_ya4ey")]
+[node name="OakTree55" parent="World/Trees" unique_id=1767945161 instance=ExtResource("5_ya4ey")]
 position = Vector2(32, 91)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree56" type="StaticBody2D" parent="World/Trees" unique_id=466897074 instance=ExtResource("5_ya4ey")]
+[node name="OakTree56" parent="World/Trees" unique_id=466897074 instance=ExtResource("5_ya4ey")]
 position = Vector2(438, 87)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree57" type="StaticBody2D" parent="World/Trees" unique_id=462095494 instance=ExtResource("7_trceg")]
+[node name="PineTree57" parent="World/Trees" unique_id=462095494 instance=ExtResource("7_trceg")]
 position = Vector2(496, 91)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree58" type="StaticBody2D" parent="World/Trees" unique_id=21961973 instance=ExtResource("7_trceg")]
+[node name="PineTree58" parent="World/Trees" unique_id=21961973 instance=ExtResource("7_trceg")]
 position = Vector2(799, 95)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree59" type="StaticBody2D" parent="World/Trees" unique_id=520939431 instance=ExtResource("7_trceg")]
+[node name="PineTree59" parent="World/Trees" unique_id=520939431 instance=ExtResource("7_trceg")]
 position = Vector2(1243, 81)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree60" type="StaticBody2D" parent="World/Trees" unique_id=1938517245 instance=ExtResource("5_ya4ey")]
+[node name="OakTree60" parent="World/Trees" unique_id=1938517245 instance=ExtResource("5_ya4ey")]
 position = Vector2(1272, 83)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree61" type="StaticBody2D" parent="World/Trees" unique_id=144272237 instance=ExtResource("5_ya4ey")]
+[node name="OakTree61" parent="World/Trees" unique_id=144272237 instance=ExtResource("5_ya4ey")]
 position = Vector2(14, 106)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree62" type="StaticBody2D" parent="World/Trees" unique_id=633500706 instance=ExtResource("5_ya4ey")]
+[node name="OakTree62" parent="World/Trees" unique_id=633500706 instance=ExtResource("5_ya4ey")]
 position = Vector2(35, 115)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree63" type="StaticBody2D" parent="World/Trees" unique_id=105165878 instance=ExtResource("7_trceg")]
+[node name="PineTree63" parent="World/Trees" unique_id=105165878 instance=ExtResource("7_trceg")]
 position = Vector2(255, 110)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree64" type="StaticBody2D" parent="World/Trees" unique_id=1225233556 instance=ExtResource("7_trceg")]
+[node name="PineTree64" parent="World/Trees" unique_id=1225233556 instance=ExtResource("7_trceg")]
 position = Vector2(819, 114)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree65" type="StaticBody2D" parent="World/Trees" unique_id=1021626174 instance=ExtResource("5_ya4ey")]
+[node name="OakTree65" parent="World/Trees" unique_id=1021626174 instance=ExtResource("5_ya4ey")]
 position = Vector2(1001, 120)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree66" type="StaticBody2D" parent="World/Trees" unique_id=149699330 instance=ExtResource("5_ya4ey")]
+[node name="OakTree66" parent="World/Trees" unique_id=149699330 instance=ExtResource("5_ya4ey")]
 position = Vector2(1270, 118)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree67" type="StaticBody2D" parent="World/Trees" unique_id=764877000 instance=ExtResource("5_ya4ey")]
+[node name="OakTree67" parent="World/Trees" unique_id=764877000 instance=ExtResource("5_ya4ey")]
 position = Vector2(19, 144)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree68" type="StaticBody2D" parent="World/Trees" unique_id=398011092 instance=ExtResource("5_ya4ey")]
+[node name="OakTree68" parent="World/Trees" unique_id=398011092 instance=ExtResource("5_ya4ey")]
 position = Vector2(46, 140)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree69" type="StaticBody2D" parent="World/Trees" unique_id=1703830446 instance=ExtResource("7_trceg")]
+[node name="PineTree69" parent="World/Trees" unique_id=1703830446 instance=ExtResource("7_trceg")]
 position = Vector2(1203, 143)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree70" type="StaticBody2D" parent="World/Trees" unique_id=1666103654 instance=ExtResource("5_ya4ey")]
+[node name="OakTree70" parent="World/Trees" unique_id=1666103654 instance=ExtResource("5_ya4ey")]
 position = Vector2(1242, 141)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree71" type="StaticBody2D" parent="World/Trees" unique_id=1838137190 instance=ExtResource("7_trceg")]
+[node name="PineTree71" parent="World/Trees" unique_id=1838137190 instance=ExtResource("7_trceg")]
 position = Vector2(1274, 143)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree72" type="StaticBody2D" parent="World/Trees" unique_id=1566156948 instance=ExtResource("7_trceg")]
+[node name="PineTree72" parent="World/Trees" unique_id=1566156948 instance=ExtResource("7_trceg")]
 position = Vector2(2, 163)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree73" type="StaticBody2D" parent="World/Trees" unique_id=868829985 instance=ExtResource("7_trceg")]
+[node name="PineTree73" parent="World/Trees" unique_id=868829985 instance=ExtResource("7_trceg")]
 position = Vector2(125, 167)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree74" type="StaticBody2D" parent="World/Trees" unique_id=403546327 instance=ExtResource("7_trceg")]
+[node name="PineTree74" parent="World/Trees" unique_id=403546327 instance=ExtResource("7_trceg")]
 position = Vector2(797, 178)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree75" type="StaticBody2D" parent="World/Trees" unique_id=1423373502 instance=ExtResource("7_trceg")]
+[node name="PineTree75" parent="World/Trees" unique_id=1423373502 instance=ExtResource("7_trceg")]
 position = Vector2(880, 172)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree76" type="StaticBody2D" parent="World/Trees" unique_id=1784501315 instance=ExtResource("5_ya4ey")]
+[node name="OakTree76" parent="World/Trees" unique_id=1784501315 instance=ExtResource("5_ya4ey")]
 position = Vector2(1236, 163)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree77" type="StaticBody2D" parent="World/Trees" unique_id=1954087573 instance=ExtResource("5_ya4ey")]
+[node name="OakTree77" parent="World/Trees" unique_id=1954087573 instance=ExtResource("5_ya4ey")]
 position = Vector2(1262, 179)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree78" type="StaticBody2D" parent="World/Trees" unique_id=544812894 instance=ExtResource("5_ya4ey")]
+[node name="OakTree78" parent="World/Trees" unique_id=544812894 instance=ExtResource("5_ya4ey")]
 position = Vector2(16, 195)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree79" type="StaticBody2D" parent="World/Trees" unique_id=1407749390 instance=ExtResource("5_ya4ey")]
+[node name="OakTree79" parent="World/Trees" unique_id=1407749390 instance=ExtResource("5_ya4ey")]
 position = Vector2(75, 202)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree80" type="StaticBody2D" parent="World/Trees" unique_id=1440857857 instance=ExtResource("5_ya4ey")]
+[node name="OakTree80" parent="World/Trees" unique_id=1440857857 instance=ExtResource("5_ya4ey")]
 position = Vector2(394, 205)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree81" type="StaticBody2D" parent="World/Trees" unique_id=1839445905 instance=ExtResource("5_ya4ey")]
+[node name="OakTree81" parent="World/Trees" unique_id=1839445905 instance=ExtResource("5_ya4ey")]
 position = Vector2(434, 196)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree82" type="StaticBody2D" parent="World/Trees" unique_id=1859220058 instance=ExtResource("5_ya4ey")]
+[node name="OakTree82" parent="World/Trees" unique_id=1859220058 instance=ExtResource("5_ya4ey")]
 position = Vector2(856, 196)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree83" type="StaticBody2D" parent="World/Trees" unique_id=56490646 instance=ExtResource("7_trceg")]
+[node name="PineTree83" parent="World/Trees" unique_id=56490646 instance=ExtResource("7_trceg")]
 position = Vector2(1245, 205)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree84" type="StaticBody2D" parent="World/Trees" unique_id=1913423722 instance=ExtResource("5_ya4ey")]
+[node name="OakTree84" parent="World/Trees" unique_id=1913423722 instance=ExtResource("5_ya4ey")]
 position = Vector2(2, 231)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree85" type="StaticBody2D" parent="World/Trees" unique_id=2020341031 instance=ExtResource("5_ya4ey")]
+[node name="OakTree85" parent="World/Trees" unique_id=2020341031 instance=ExtResource("5_ya4ey")]
 position = Vector2(33, 225)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree86" type="StaticBody2D" parent="World/Trees" unique_id=936139713 instance=ExtResource("7_trceg")]
+[node name="PineTree86" parent="World/Trees" unique_id=936139713 instance=ExtResource("7_trceg")]
 position = Vector2(459, 222)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree87" type="StaticBody2D" parent="World/Trees" unique_id=1653476087 instance=ExtResource("7_trceg")]
+[node name="PineTree87" parent="World/Trees" unique_id=1653476087 instance=ExtResource("7_trceg")]
 position = Vector2(733, 218)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree88" type="StaticBody2D" parent="World/Trees" unique_id=566170004 instance=ExtResource("5_ya4ey")]
+[node name="OakTree88" parent="World/Trees" unique_id=566170004 instance=ExtResource("5_ya4ey")]
 position = Vector2(815, 230)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree89" type="StaticBody2D" parent="World/Trees" unique_id=751429186 instance=ExtResource("5_ya4ey")]
+[node name="OakTree89" parent="World/Trees" unique_id=751429186 instance=ExtResource("5_ya4ey")]
 position = Vector2(949, 231)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree90" type="StaticBody2D" parent="World/Trees" unique_id=2003282852 instance=ExtResource("7_trceg")]
+[node name="PineTree90" parent="World/Trees" unique_id=2003282852 instance=ExtResource("7_trceg")]
 position = Vector2(1231, 234)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree91" type="StaticBody2D" parent="World/Trees" unique_id=1348392137 instance=ExtResource("5_ya4ey")]
+[node name="OakTree91" parent="World/Trees" unique_id=1348392137 instance=ExtResource("5_ya4ey")]
 position = Vector2(42, 257)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree92" type="StaticBody2D" parent="World/Trees" unique_id=2023247031 instance=ExtResource("5_ya4ey")]
+[node name="OakTree92" parent="World/Trees" unique_id=2023247031 instance=ExtResource("5_ya4ey")]
 position = Vector2(695, 250)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree93" type="StaticBody2D" parent="World/Trees" unique_id=920818776 instance=ExtResource("5_ya4ey")]
+[node name="OakTree93" parent="World/Trees" unique_id=920818776 instance=ExtResource("5_ya4ey")]
 position = Vector2(794, 260)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree94" type="StaticBody2D" parent="World/Trees" unique_id=2069127220 instance=ExtResource("5_ya4ey")]
+[node name="OakTree94" parent="World/Trees" unique_id=2069127220 instance=ExtResource("5_ya4ey")]
 position = Vector2(1268, 251)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree95" type="StaticBody2D" parent="World/Trees" unique_id=997158376 instance=ExtResource("5_ya4ey")]
+[node name="OakTree95" parent="World/Trees" unique_id=997158376 instance=ExtResource("5_ya4ey")]
 position = Vector2(5, 277)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree96" type="StaticBody2D" parent="World/Trees" unique_id=1255932280 instance=ExtResource("7_trceg")]
+[node name="PineTree96" parent="World/Trees" unique_id=1255932280 instance=ExtResource("7_trceg")]
 position = Vector2(123, 277)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree97" type="StaticBody2D" parent="World/Trees" unique_id=1786998557 instance=ExtResource("5_ya4ey")]
+[node name="OakTree97" parent="World/Trees" unique_id=1786998557 instance=ExtResource("5_ya4ey")]
 position = Vector2(642, 275)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree98" type="StaticBody2D" parent="World/Trees" unique_id=813051821 instance=ExtResource("7_trceg")]
+[node name="PineTree98" parent="World/Trees" unique_id=813051821 instance=ExtResource("7_trceg")]
 position = Vector2(693, 287)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree99" type="StaticBody2D" parent="World/Trees" unique_id=109202233 instance=ExtResource("5_ya4ey")]
+[node name="OakTree99" parent="World/Trees" unique_id=109202233 instance=ExtResource("5_ya4ey")]
 position = Vector2(819, 289)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree100" type="StaticBody2D" parent="World/Trees" unique_id=1696685613 instance=ExtResource("5_ya4ey")]
+[node name="OakTree100" parent="World/Trees" unique_id=1696685613 instance=ExtResource("5_ya4ey")]
 position = Vector2(1172, 288)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree101" type="StaticBody2D" parent="World/Trees" unique_id=1257672732 instance=ExtResource("7_trceg")]
+[node name="PineTree101" parent="World/Trees" unique_id=1257672732 instance=ExtResource("7_trceg")]
 position = Vector2(1238, 283)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree102" type="StaticBody2D" parent="World/Trees" unique_id=1676344461 instance=ExtResource("5_ya4ey")]
+[node name="OakTree102" parent="World/Trees" unique_id=1676344461 instance=ExtResource("5_ya4ey")]
 position = Vector2(1277, 287)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree103" type="StaticBody2D" parent="World/Trees" unique_id=1486890576 instance=ExtResource("5_ya4ey")]
+[node name="OakTree103" parent="World/Trees" unique_id=1486890576 instance=ExtResource("5_ya4ey")]
 position = Vector2(8, 313)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree104" type="StaticBody2D" parent="World/Trees" unique_id=313588377 instance=ExtResource("5_ya4ey")]
+[node name="OakTree104" parent="World/Trees" unique_id=313588377 instance=ExtResource("5_ya4ey")]
 position = Vector2(43, 311)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree105" type="StaticBody2D" parent="World/Trees" unique_id=787710512 instance=ExtResource("5_ya4ey")]
+[node name="OakTree105" parent="World/Trees" unique_id=787710512 instance=ExtResource("5_ya4ey")]
 position = Vector2(189, 313)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree106" type="StaticBody2D" parent="World/Trees" unique_id=830315751 instance=ExtResource("7_trceg")]
+[node name="PineTree106" parent="World/Trees" unique_id=830315751 instance=ExtResource("7_trceg")]
 position = Vector2(221, 316)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree107" type="StaticBody2D" parent="World/Trees" unique_id=632722914 instance=ExtResource("5_ya4ey")]
+[node name="OakTree107" parent="World/Trees" unique_id=632722914 instance=ExtResource("5_ya4ey")]
 position = Vector2(544, 319)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree108" type="StaticBody2D" parent="World/Trees" unique_id=2107805795 instance=ExtResource("5_ya4ey")]
+[node name="OakTree108" parent="World/Trees" unique_id=2107805795 instance=ExtResource("5_ya4ey")]
 position = Vector2(585, 314)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree109" type="StaticBody2D" parent="World/Trees" unique_id=730238082 instance=ExtResource("5_ya4ey")]
+[node name="OakTree109" parent="World/Trees" unique_id=730238082 instance=ExtResource("5_ya4ey")]
 position = Vector2(915, 301)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree110" type="StaticBody2D" parent="World/Trees" unique_id=1506280136 instance=ExtResource("5_ya4ey")]
+[node name="OakTree110" parent="World/Trees" unique_id=1506280136 instance=ExtResource("5_ya4ey")]
 position = Vector2(996, 315)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree111" type="StaticBody2D" parent="World/Trees" unique_id=1606149205 instance=ExtResource("5_ya4ey")]
+[node name="OakTree111" parent="World/Trees" unique_id=1606149205 instance=ExtResource("5_ya4ey")]
 position = Vector2(1248, 310)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree112" type="StaticBody2D" parent="World/Trees" unique_id=140349321 instance=ExtResource("5_ya4ey")]
+[node name="OakTree112" parent="World/Trees" unique_id=140349321 instance=ExtResource("5_ya4ey")]
 position = Vector2(1274, 313)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree113" type="StaticBody2D" parent="World/Trees" unique_id=1630573511 instance=ExtResource("7_trceg")]
+[node name="PineTree113" parent="World/Trees" unique_id=1630573511 instance=ExtResource("7_trceg")]
 position = Vector2(1, 334)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree114" type="StaticBody2D" parent="World/Trees" unique_id=1625131173 instance=ExtResource("7_trceg")]
+[node name="PineTree114" parent="World/Trees" unique_id=1625131173 instance=ExtResource("7_trceg")]
 position = Vector2(46, 334)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree115" type="StaticBody2D" parent="World/Trees" unique_id=760891922 instance=ExtResource("5_ya4ey")]
+[node name="OakTree115" parent="World/Trees" unique_id=760891922 instance=ExtResource("5_ya4ey")]
 position = Vector2(281, 345)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree116" type="StaticBody2D" parent="World/Trees" unique_id=1334743548 instance=ExtResource("5_ya4ey")]
+[node name="OakTree116" parent="World/Trees" unique_id=1334743548 instance=ExtResource("5_ya4ey")]
 position = Vector2(372, 336)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree117" type="StaticBody2D" parent="World/Trees" unique_id=2116283682 instance=ExtResource("5_ya4ey")]
+[node name="OakTree117" parent="World/Trees" unique_id=2116283682 instance=ExtResource("5_ya4ey")]
 position = Vector2(395, 336)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree118" type="StaticBody2D" parent="World/Trees" unique_id=289225602 instance=ExtResource("5_ya4ey")]
+[node name="OakTree118" parent="World/Trees" unique_id=289225602 instance=ExtResource("5_ya4ey")]
 position = Vector2(460, 343)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree119" type="StaticBody2D" parent="World/Trees" unique_id=314234818 instance=ExtResource("5_ya4ey")]
+[node name="OakTree119" parent="World/Trees" unique_id=314234818 instance=ExtResource("5_ya4ey")]
 position = Vector2(644, 339)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree120" type="StaticBody2D" parent="World/Trees" unique_id=1612531536 instance=ExtResource("7_trceg")]
+[node name="PineTree120" parent="World/Trees" unique_id=1612531536 instance=ExtResource("7_trceg")]
 position = Vector2(673, 333)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree121" type="StaticBody2D" parent="World/Trees" unique_id=794974296 instance=ExtResource("5_ya4ey")]
+[node name="OakTree121" parent="World/Trees" unique_id=794974296 instance=ExtResource("5_ya4ey")]
 position = Vector2(736, 334)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree122" type="StaticBody2D" parent="World/Trees" unique_id=2001974430 instance=ExtResource("5_ya4ey")]
+[node name="OakTree122" parent="World/Trees" unique_id=2001974430 instance=ExtResource("5_ya4ey")]
 position = Vector2(768, 346)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree123" type="StaticBody2D" parent="World/Trees" unique_id=1275876835 instance=ExtResource("5_ya4ey")]
+[node name="OakTree123" parent="World/Trees" unique_id=1275876835 instance=ExtResource("5_ya4ey")]
 position = Vector2(842, 339)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree124" type="StaticBody2D" parent="World/Trees" unique_id=1803729506 instance=ExtResource("5_ya4ey")]
+[node name="OakTree124" parent="World/Trees" unique_id=1803729506 instance=ExtResource("5_ya4ey")]
 position = Vector2(1269, 340)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree125" type="StaticBody2D" parent="World/Trees" unique_id=1431825728 instance=ExtResource("7_trceg")]
+[node name="PineTree125" parent="World/Trees" unique_id=1431825728 instance=ExtResource("7_trceg")]
 position = Vector2(1, 372)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree126" type="StaticBody2D" parent="World/Trees" unique_id=1419979295 instance=ExtResource("7_trceg")]
+[node name="PineTree126" parent="World/Trees" unique_id=1419979295 instance=ExtResource("7_trceg")]
 position = Vector2(100, 372)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree127" type="StaticBody2D" parent="World/Trees" unique_id=301882152 instance=ExtResource("7_trceg")]
+[node name="PineTree127" parent="World/Trees" unique_id=301882152 instance=ExtResource("7_trceg")]
 position = Vector2(340, 367)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree128" type="StaticBody2D" parent="World/Trees" unique_id=395830829 instance=ExtResource("5_ya4ey")]
+[node name="OakTree128" parent="World/Trees" unique_id=395830829 instance=ExtResource("5_ya4ey")]
 position = Vector2(435, 359)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree129" type="StaticBody2D" parent="World/Trees" unique_id=818940369 instance=ExtResource("7_trceg")]
+[node name="PineTree129" parent="World/Trees" unique_id=818940369 instance=ExtResource("7_trceg")]
 position = Vector2(485, 371)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree130" type="StaticBody2D" parent="World/Trees" unique_id=1498003510 instance=ExtResource("5_ya4ey")]
+[node name="OakTree130" parent="World/Trees" unique_id=1498003510 instance=ExtResource("5_ya4ey")]
 position = Vector2(577, 370)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree131" type="StaticBody2D" parent="World/Trees" unique_id=549349792 instance=ExtResource("7_trceg")]
+[node name="PineTree131" parent="World/Trees" unique_id=549349792 instance=ExtResource("7_trceg")]
 position = Vector2(619, 364)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree132" type="StaticBody2D" parent="World/Trees" unique_id=1174056538 instance=ExtResource("7_trceg")]
+[node name="PineTree132" parent="World/Trees" unique_id=1174056538 instance=ExtResource("7_trceg")]
 position = Vector2(666, 372)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree133" type="StaticBody2D" parent="World/Trees" unique_id=997704669 instance=ExtResource("5_ya4ey")]
+[node name="OakTree133" parent="World/Trees" unique_id=997704669 instance=ExtResource("5_ya4ey")]
 position = Vector2(871, 367)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree134" type="StaticBody2D" parent="World/Trees" unique_id=1740895170 instance=ExtResource("5_ya4ey")]
+[node name="OakTree134" parent="World/Trees" unique_id=1740895170 instance=ExtResource("5_ya4ey")]
 position = Vector2(1125, 367)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree135" type="StaticBody2D" parent="World/Trees" unique_id=3291305 instance=ExtResource("5_ya4ey")]
+[node name="OakTree135" parent="World/Trees" unique_id=3291305 instance=ExtResource("5_ya4ey")]
 position = Vector2(1156, 358)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree136" type="StaticBody2D" parent="World/Trees" unique_id=1525740111 instance=ExtResource("7_trceg")]
+[node name="PineTree136" parent="World/Trees" unique_id=1525740111 instance=ExtResource("7_trceg")]
 position = Vector2(1239, 367)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree137" type="StaticBody2D" parent="World/Trees" unique_id=1086203915 instance=ExtResource("5_ya4ey")]
+[node name="OakTree137" parent="World/Trees" unique_id=1086203915 instance=ExtResource("5_ya4ey")]
 position = Vector2(1268, 368)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree138" type="StaticBody2D" parent="World/Trees" unique_id=1089461087 instance=ExtResource("5_ya4ey")]
+[node name="OakTree138" parent="World/Trees" unique_id=1089461087 instance=ExtResource("5_ya4ey")]
 position = Vector2(48, 397)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree139" type="StaticBody2D" parent="World/Trees" unique_id=627727643 instance=ExtResource("5_ya4ey")]
+[node name="OakTree139" parent="World/Trees" unique_id=627727643 instance=ExtResource("5_ya4ey")]
 position = Vector2(78, 387)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree140" type="StaticBody2D" parent="World/Trees" unique_id=1265661746 instance=ExtResource("7_trceg")]
+[node name="PineTree140" parent="World/Trees" unique_id=1265661746 instance=ExtResource("7_trceg")]
 position = Vector2(187, 390)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree141" type="StaticBody2D" parent="World/Trees" unique_id=1839109927 instance=ExtResource("5_ya4ey")]
+[node name="OakTree141" parent="World/Trees" unique_id=1839109927 instance=ExtResource("5_ya4ey")]
 position = Vector2(249, 395)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree142" type="StaticBody2D" parent="World/Trees" unique_id=574906606 instance=ExtResource("5_ya4ey")]
+[node name="OakTree142" parent="World/Trees" unique_id=574906606 instance=ExtResource("5_ya4ey")]
 position = Vector2(558, 390)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree143" type="StaticBody2D" parent="World/Trees" unique_id=237256293 instance=ExtResource("5_ya4ey")]
+[node name="OakTree143" parent="World/Trees" unique_id=237256293 instance=ExtResource("5_ya4ey")]
 position = Vector2(698, 385)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree144" type="StaticBody2D" parent="World/Trees" unique_id=1017155400 instance=ExtResource("5_ya4ey")]
+[node name="OakTree144" parent="World/Trees" unique_id=1017155400 instance=ExtResource("5_ya4ey")]
 position = Vector2(818, 396)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree145" type="StaticBody2D" parent="World/Trees" unique_id=728675214 instance=ExtResource("5_ya4ey")]
+[node name="OakTree145" parent="World/Trees" unique_id=728675214 instance=ExtResource("5_ya4ey")]
 position = Vector2(1155, 392)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree146" type="StaticBody2D" parent="World/Trees" unique_id=131571674 instance=ExtResource("5_ya4ey")]
+[node name="OakTree146" parent="World/Trees" unique_id=131571674 instance=ExtResource("5_ya4ey")]
 position = Vector2(1262, 396)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree147" type="StaticBody2D" parent="World/Trees" unique_id=720283267 instance=ExtResource("7_trceg")]
+[node name="PineTree147" parent="World/Trees" unique_id=720283267 instance=ExtResource("7_trceg")]
 position = Vector2(37, 427)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree148" type="StaticBody2D" parent="World/Trees" unique_id=1103186046 instance=ExtResource("5_ya4ey")]
+[node name="OakTree148" parent="World/Trees" unique_id=1103186046 instance=ExtResource("5_ya4ey")]
 position = Vector2(78, 422)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree149" type="StaticBody2D" parent="World/Trees" unique_id=152976249 instance=ExtResource("5_ya4ey")]
+[node name="OakTree149" parent="World/Trees" unique_id=152976249 instance=ExtResource("5_ya4ey")]
 position = Vector2(271, 421)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree150" type="StaticBody2D" parent="World/Trees" unique_id=105837183 instance=ExtResource("5_ya4ey")]
+[node name="OakTree150" parent="World/Trees" unique_id=105837183 instance=ExtResource("5_ya4ey")]
 position = Vector2(346, 427)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree151" type="StaticBody2D" parent="World/Trees" unique_id=379248113 instance=ExtResource("7_trceg")]
+[node name="PineTree151" parent="World/Trees" unique_id=379248113 instance=ExtResource("7_trceg")]
 position = Vector2(460, 430)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree152" type="StaticBody2D" parent="World/Trees" unique_id=37348640 instance=ExtResource("7_trceg")]
+[node name="PineTree152" parent="World/Trees" unique_id=37348640 instance=ExtResource("7_trceg")]
 position = Vector2(552, 420)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree153" type="StaticBody2D" parent="World/Trees" unique_id=1782404327 instance=ExtResource("5_ya4ey")]
+[node name="OakTree153" parent="World/Trees" unique_id=1782404327 instance=ExtResource("5_ya4ey")]
 position = Vector2(905, 415)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree154" type="StaticBody2D" parent="World/Trees" unique_id=1366493103 instance=ExtResource("7_trceg")]
+[node name="PineTree154" parent="World/Trees" unique_id=1366493103 instance=ExtResource("7_trceg")]
 position = Vector2(994, 414)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree155" type="StaticBody2D" parent="World/Trees" unique_id=203452904 instance=ExtResource("7_trceg")]
+[node name="PineTree155" parent="World/Trees" unique_id=203452904 instance=ExtResource("7_trceg")]
 position = Vector2(1155, 419)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree156" type="StaticBody2D" parent="World/Trees" unique_id=1244716442 instance=ExtResource("5_ya4ey")]
+[node name="OakTree156" parent="World/Trees" unique_id=1244716442 instance=ExtResource("5_ya4ey")]
 position = Vector2(1182, 421)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree157" type="StaticBody2D" parent="World/Trees" unique_id=1414885741 instance=ExtResource("7_trceg")]
+[node name="PineTree157" parent="World/Trees" unique_id=1414885741 instance=ExtResource("7_trceg")]
 position = Vector2(1270, 429)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree158" type="StaticBody2D" parent="World/Trees" unique_id=636882961 instance=ExtResource("7_trceg")]
+[node name="PineTree158" parent="World/Trees" unique_id=636882961 instance=ExtResource("7_trceg")]
 position = Vector2(6, 458)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree159" type="StaticBody2D" parent="World/Trees" unique_id=1526147044 instance=ExtResource("7_trceg")]
+[node name="PineTree159" parent="World/Trees" unique_id=1526147044 instance=ExtResource("7_trceg")]
 position = Vector2(34, 451)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree160" type="StaticBody2D" parent="World/Trees" unique_id=1243390974 instance=ExtResource("7_trceg")]
+[node name="PineTree160" parent="World/Trees" unique_id=1243390974 instance=ExtResource("7_trceg")]
 position = Vector2(289, 454)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree161" type="StaticBody2D" parent="World/Trees" unique_id=1602823438 instance=ExtResource("7_trceg")]
+[node name="PineTree161" parent="World/Trees" unique_id=1602823438 instance=ExtResource("7_trceg")]
 position = Vector2(730, 446)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree162" type="StaticBody2D" parent="World/Trees" unique_id=197734706 instance=ExtResource("5_ya4ey")]
+[node name="OakTree162" parent="World/Trees" unique_id=197734706 instance=ExtResource("5_ya4ey")]
 position = Vector2(871, 444)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree163" type="StaticBody2D" parent="World/Trees" unique_id=120893170 instance=ExtResource("5_ya4ey")]
+[node name="OakTree163" parent="World/Trees" unique_id=120893170 instance=ExtResource("5_ya4ey")]
 position = Vector2(994, 450)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree164" type="StaticBody2D" parent="World/Trees" unique_id=1052194041 instance=ExtResource("7_trceg")]
+[node name="PineTree164" parent="World/Trees" unique_id=1052194041 instance=ExtResource("7_trceg")]
 position = Vector2(1121, 443)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree165" type="StaticBody2D" parent="World/Trees" unique_id=49144553 instance=ExtResource("7_trceg")]
+[node name="PineTree165" parent="World/Trees" unique_id=49144553 instance=ExtResource("7_trceg")]
 position = Vector2(1152, 453)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree166" type="StaticBody2D" parent="World/Trees" unique_id=169213005 instance=ExtResource("7_trceg")]
+[node name="PineTree166" parent="World/Trees" unique_id=169213005 instance=ExtResource("7_trceg")]
 position = Vector2(1204, 448)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree167" type="StaticBody2D" parent="World/Trees" unique_id=609635 instance=ExtResource("5_ya4ey")]
+[node name="OakTree167" parent="World/Trees" unique_id=609635 instance=ExtResource("5_ya4ey")]
 position = Vector2(1235, 456)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree168" type="StaticBody2D" parent="World/Trees" unique_id=660734303 instance=ExtResource("5_ya4ey")]
+[node name="OakTree168" parent="World/Trees" unique_id=660734303 instance=ExtResource("5_ya4ey")]
 position = Vector2(164, 485)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree169" type="StaticBody2D" parent="World/Trees" unique_id=1637790489 instance=ExtResource("5_ya4ey")]
+[node name="OakTree169" parent="World/Trees" unique_id=1637790489 instance=ExtResource("5_ya4ey")]
 position = Vector2(331, 471)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree170" type="StaticBody2D" parent="World/Trees" unique_id=1367433770 instance=ExtResource("7_trceg")]
+[node name="PineTree170" parent="World/Trees" unique_id=1367433770 instance=ExtResource("7_trceg")]
 position = Vector2(457, 484)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree171" type="StaticBody2D" parent="World/Trees" unique_id=1782162895 instance=ExtResource("7_trceg")]
+[node name="PineTree171" parent="World/Trees" unique_id=1782162895 instance=ExtResource("7_trceg")]
 position = Vector2(767, 473)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree172" type="StaticBody2D" parent="World/Trees" unique_id=86757932 instance=ExtResource("7_trceg")]
+[node name="PineTree172" parent="World/Trees" unique_id=86757932 instance=ExtResource("7_trceg")]
 position = Vector2(877, 477)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree173" type="StaticBody2D" parent="World/Trees" unique_id=61701884 instance=ExtResource("7_trceg")]
+[node name="PineTree173" parent="World/Trees" unique_id=61701884 instance=ExtResource("7_trceg")]
 position = Vector2(947, 480)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree174" type="StaticBody2D" parent="World/Trees" unique_id=1359881993 instance=ExtResource("5_ya4ey")]
+[node name="OakTree174" parent="World/Trees" unique_id=1359881993 instance=ExtResource("5_ya4ey")]
 position = Vector2(1141, 474)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree175" type="StaticBody2D" parent="World/Trees" unique_id=1304961625 instance=ExtResource("5_ya4ey")]
+[node name="OakTree175" parent="World/Trees" unique_id=1304961625 instance=ExtResource("5_ya4ey")]
 position = Vector2(1248, 476)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree176" type="StaticBody2D" parent="World/Trees" unique_id=635538235 instance=ExtResource("7_trceg")]
+[node name="PineTree176" parent="World/Trees" unique_id=635538235 instance=ExtResource("7_trceg")]
 position = Vector2(1270, 482)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree177" type="StaticBody2D" parent="World/Trees" unique_id=1517858811 instance=ExtResource("7_trceg")]
+[node name="PineTree177" parent="World/Trees" unique_id=1517858811 instance=ExtResource("7_trceg")]
 position = Vector2(18, 509)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree178" type="StaticBody2D" parent="World/Trees" unique_id=1242780430 instance=ExtResource("5_ya4ey")]
+[node name="OakTree178" parent="World/Trees" unique_id=1242780430 instance=ExtResource("5_ya4ey")]
 position = Vector2(39, 501)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree179" type="StaticBody2D" parent="World/Trees" unique_id=950804652 instance=ExtResource("5_ya4ey")]
+[node name="OakTree179" parent="World/Trees" unique_id=950804652 instance=ExtResource("5_ya4ey")]
 position = Vector2(69, 508)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree180" type="StaticBody2D" parent="World/Trees" unique_id=1861912423 instance=ExtResource("7_trceg")]
+[node name="PineTree180" parent="World/Trees" unique_id=1861912423 instance=ExtResource("7_trceg")]
 position = Vector2(456, 510)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree181" type="StaticBody2D" parent="World/Trees" unique_id=191198138 instance=ExtResource("5_ya4ey")]
+[node name="OakTree181" parent="World/Trees" unique_id=191198138 instance=ExtResource("5_ya4ey")]
 position = Vector2(736, 502)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree182" type="StaticBody2D" parent="World/Trees" unique_id=1606517268 instance=ExtResource("5_ya4ey")]
+[node name="OakTree182" parent="World/Trees" unique_id=1606517268 instance=ExtResource("5_ya4ey")]
 position = Vector2(1059, 503)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree183" type="StaticBody2D" parent="World/Trees" unique_id=735633481 instance=ExtResource("7_trceg")]
+[node name="PineTree183" parent="World/Trees" unique_id=735633481 instance=ExtResource("7_trceg")]
 position = Vector2(1243, 510)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree184" type="StaticBody2D" parent="World/Trees" unique_id=23197141 instance=ExtResource("5_ya4ey")]
+[node name="OakTree184" parent="World/Trees" unique_id=23197141 instance=ExtResource("5_ya4ey")]
 position = Vector2(11, 536)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree185" type="StaticBody2D" parent="World/Trees" unique_id=1684796535 instance=ExtResource("7_trceg")]
+[node name="PineTree185" parent="World/Trees" unique_id=1684796535 instance=ExtResource("7_trceg")]
 position = Vector2(33, 543)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree186" type="StaticBody2D" parent="World/Trees" unique_id=1743337818 instance=ExtResource("5_ya4ey")]
+[node name="OakTree186" parent="World/Trees" unique_id=1743337818 instance=ExtResource("5_ya4ey")]
 position = Vector2(108, 528)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree187" type="StaticBody2D" parent="World/Trees" unique_id=1009042767 instance=ExtResource("5_ya4ey")]
+[node name="OakTree187" parent="World/Trees" unique_id=1009042767 instance=ExtResource("5_ya4ey")]
 position = Vector2(399, 527)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree188" type="StaticBody2D" parent="World/Trees" unique_id=529900136 instance=ExtResource("5_ya4ey")]
+[node name="OakTree188" parent="World/Trees" unique_id=529900136 instance=ExtResource("5_ya4ey")]
 position = Vector2(557, 528)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree189" type="StaticBody2D" parent="World/Trees" unique_id=2010224987 instance=ExtResource("5_ya4ey")]
+[node name="OakTree189" parent="World/Trees" unique_id=2010224987 instance=ExtResource("5_ya4ey")]
 position = Vector2(601, 543)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree190" type="StaticBody2D" parent="World/Trees" unique_id=557954130 instance=ExtResource("7_trceg")]
+[node name="PineTree190" parent="World/Trees" unique_id=557954130 instance=ExtResource("7_trceg")]
 position = Vector2(1057, 536)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree191" type="StaticBody2D" parent="World/Trees" unique_id=1080995059 instance=ExtResource("7_trceg")]
+[node name="PineTree191" parent="World/Trees" unique_id=1080995059 instance=ExtResource("7_trceg")]
 position = Vector2(1275, 532)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree192" type="StaticBody2D" parent="World/Trees" unique_id=1111036196 instance=ExtResource("5_ya4ey")]
+[node name="OakTree192" parent="World/Trees" unique_id=1111036196 instance=ExtResource("5_ya4ey")]
 position = Vector2(14, 571)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree193" type="StaticBody2D" parent="World/Trees" unique_id=621338877 instance=ExtResource("5_ya4ey")]
+[node name="OakTree193" parent="World/Trees" unique_id=621338877 instance=ExtResource("5_ya4ey")]
 position = Vector2(698, 565)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree194" type="StaticBody2D" parent="World/Trees" unique_id=822858968 instance=ExtResource("5_ya4ey")]
+[node name="OakTree194" parent="World/Trees" unique_id=822858968 instance=ExtResource("5_ya4ey")]
 position = Vector2(732, 558)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree195" type="StaticBody2D" parent="World/Trees" unique_id=204735836 instance=ExtResource("5_ya4ey")]
+[node name="OakTree195" parent="World/Trees" unique_id=204735836 instance=ExtResource("5_ya4ey")]
 position = Vector2(762, 555)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree196" type="StaticBody2D" parent="World/Trees" unique_id=934038724 instance=ExtResource("5_ya4ey")]
+[node name="OakTree196" parent="World/Trees" unique_id=934038724 instance=ExtResource("5_ya4ey")]
 position = Vector2(791, 558)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree197" type="StaticBody2D" parent="World/Trees" unique_id=437852731 instance=ExtResource("5_ya4ey")]
+[node name="OakTree197" parent="World/Trees" unique_id=437852731 instance=ExtResource("5_ya4ey")]
 position = Vector2(1084, 561)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree198" type="StaticBody2D" parent="World/Trees" unique_id=358403897 instance=ExtResource("7_trceg")]
+[node name="PineTree198" parent="World/Trees" unique_id=358403897 instance=ExtResource("7_trceg")]
 position = Vector2(1173, 558)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree199" type="StaticBody2D" parent="World/Trees" unique_id=1493928156 instance=ExtResource("5_ya4ey")]
+[node name="OakTree199" parent="World/Trees" unique_id=1493928156 instance=ExtResource("5_ya4ey")]
 position = Vector2(1235, 564)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree200" type="StaticBody2D" parent="World/Trees" unique_id=1603000274 instance=ExtResource("5_ya4ey")]
+[node name="OakTree200" parent="World/Trees" unique_id=1603000274 instance=ExtResource("5_ya4ey")]
 position = Vector2(1271, 558)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree201" type="StaticBody2D" parent="World/Trees" unique_id=1202559327 instance=ExtResource("5_ya4ey")]
+[node name="OakTree201" parent="World/Trees" unique_id=1202559327 instance=ExtResource("5_ya4ey")]
 position = Vector2(213, 581)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree202" type="StaticBody2D" parent="World/Trees" unique_id=293185828 instance=ExtResource("5_ya4ey")]
+[node name="OakTree202" parent="World/Trees" unique_id=293185828 instance=ExtResource("5_ya4ey")]
 position = Vector2(314, 596)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree203" type="StaticBody2D" parent="World/Trees" unique_id=28977293 instance=ExtResource("5_ya4ey")]
+[node name="OakTree203" parent="World/Trees" unique_id=28977293 instance=ExtResource("5_ya4ey")]
 position = Vector2(367, 584)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree204" type="StaticBody2D" parent="World/Trees" unique_id=744112191 instance=ExtResource("5_ya4ey")]
+[node name="OakTree204" parent="World/Trees" unique_id=744112191 instance=ExtResource("5_ya4ey")]
 position = Vector2(551, 594)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree205" type="StaticBody2D" parent="World/Trees" unique_id=1247110130 instance=ExtResource("5_ya4ey")]
+[node name="OakTree205" parent="World/Trees" unique_id=1247110130 instance=ExtResource("5_ya4ey")]
 position = Vector2(607, 595)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree206" type="StaticBody2D" parent="World/Trees" unique_id=2005003701 instance=ExtResource("5_ya4ey")]
+[node name="OakTree206" parent="World/Trees" unique_id=2005003701 instance=ExtResource("5_ya4ey")]
 position = Vector2(729, 588)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree207" type="StaticBody2D" parent="World/Trees" unique_id=1495444689 instance=ExtResource("5_ya4ey")]
+[node name="OakTree207" parent="World/Trees" unique_id=1495444689 instance=ExtResource("5_ya4ey")]
 position = Vector2(903, 590)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree208" type="StaticBody2D" parent="World/Trees" unique_id=1697229121 instance=ExtResource("7_trceg")]
+[node name="PineTree208" parent="World/Trees" unique_id=1697229121 instance=ExtResource("7_trceg")]
 position = Vector2(1007, 588)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree209" type="StaticBody2D" parent="World/Trees" unique_id=722324021 instance=ExtResource("7_trceg")]
+[node name="PineTree209" parent="World/Trees" unique_id=722324021 instance=ExtResource("7_trceg")]
 position = Vector2(1178, 590)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree210" type="StaticBody2D" parent="World/Trees" unique_id=2007454167 instance=ExtResource("7_trceg")]
+[node name="PineTree210" parent="World/Trees" unique_id=2007454167 instance=ExtResource("7_trceg")]
 position = Vector2(1248, 588)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree211" type="StaticBody2D" parent="World/Trees" unique_id=1679850860 instance=ExtResource("5_ya4ey")]
+[node name="OakTree211" parent="World/Trees" unique_id=1679850860 instance=ExtResource("5_ya4ey")]
 position = Vector2(1273, 588)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree212" type="StaticBody2D" parent="World/Trees" unique_id=1243224072 instance=ExtResource("5_ya4ey")]
+[node name="OakTree212" parent="World/Trees" unique_id=1243224072 instance=ExtResource("5_ya4ey")]
 position = Vector2(5, 609)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree213" type="StaticBody2D" parent="World/Trees" unique_id=1582783481 instance=ExtResource("5_ya4ey")]
+[node name="OakTree213" parent="World/Trees" unique_id=1582783481 instance=ExtResource("5_ya4ey")]
 position = Vector2(37, 619)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree214" type="StaticBody2D" parent="World/Trees" unique_id=1151379312 instance=ExtResource("5_ya4ey")]
+[node name="OakTree214" parent="World/Trees" unique_id=1151379312 instance=ExtResource("5_ya4ey")]
 position = Vector2(166, 609)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree215" type="StaticBody2D" parent="World/Trees" unique_id=3107333 instance=ExtResource("5_ya4ey")]
+[node name="OakTree215" parent="World/Trees" unique_id=3107333 instance=ExtResource("5_ya4ey")]
 position = Vector2(454, 622)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree216" type="StaticBody2D" parent="World/Trees" unique_id=1716244861 instance=ExtResource("5_ya4ey")]
+[node name="OakTree216" parent="World/Trees" unique_id=1716244861 instance=ExtResource("5_ya4ey")]
 position = Vector2(548, 617)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree217" type="StaticBody2D" parent="World/Trees" unique_id=1537596609 instance=ExtResource("5_ya4ey")]
+[node name="OakTree217" parent="World/Trees" unique_id=1537596609 instance=ExtResource("5_ya4ey")]
 position = Vector2(612, 621)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree218" type="StaticBody2D" parent="World/Trees" unique_id=686901549 instance=ExtResource("5_ya4ey")]
+[node name="OakTree218" parent="World/Trees" unique_id=686901549 instance=ExtResource("5_ya4ey")]
 position = Vector2(752, 613)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree219" type="StaticBody2D" parent="World/Trees" unique_id=1439097805 instance=ExtResource("7_trceg")]
+[node name="PineTree219" parent="World/Trees" unique_id=1439097805 instance=ExtResource("7_trceg")]
 position = Vector2(875, 622)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree220" type="StaticBody2D" parent="World/Trees" unique_id=1181741322 instance=ExtResource("5_ya4ey")]
+[node name="OakTree220" parent="World/Trees" unique_id=1181741322 instance=ExtResource("5_ya4ey")]
 position = Vector2(1248, 617)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree221" type="StaticBody2D" parent="World/Trees" unique_id=464038943 instance=ExtResource("5_ya4ey")]
+[node name="OakTree221" parent="World/Trees" unique_id=464038943 instance=ExtResource("5_ya4ey")]
 position = Vector2(1271, 621)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree222" type="StaticBody2D" parent="World/Trees" unique_id=1226760197 instance=ExtResource("7_trceg")]
+[node name="PineTree222" parent="World/Trees" unique_id=1226760197 instance=ExtResource("7_trceg")]
 position = Vector2(18, 648)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree223" type="StaticBody2D" parent="World/Trees" unique_id=121879944 instance=ExtResource("5_ya4ey")]
+[node name="OakTree223" parent="World/Trees" unique_id=121879944 instance=ExtResource("5_ya4ey")]
 position = Vector2(349, 645)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree224" type="StaticBody2D" parent="World/Trees" unique_id=443653675 instance=ExtResource("7_trceg")]
+[node name="PineTree224" parent="World/Trees" unique_id=443653675 instance=ExtResource("7_trceg")]
 position = Vector2(406, 640)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree225" type="StaticBody2D" parent="World/Trees" unique_id=964068074 instance=ExtResource("5_ya4ey")]
+[node name="OakTree225" parent="World/Trees" unique_id=964068074 instance=ExtResource("5_ya4ey")]
 position = Vector2(439, 655)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree226" type="StaticBody2D" parent="World/Trees" unique_id=704926205 instance=ExtResource("5_ya4ey")]
+[node name="OakTree226" parent="World/Trees" unique_id=704926205 instance=ExtResource("5_ya4ey")]
 position = Vector2(484, 637)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree227" type="StaticBody2D" parent="World/Trees" unique_id=354818851 instance=ExtResource("7_trceg")]
+[node name="PineTree227" parent="World/Trees" unique_id=354818851 instance=ExtResource("7_trceg")]
 position = Vector2(827, 641)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree228" type="StaticBody2D" parent="World/Trees" unique_id=1873173105 instance=ExtResource("5_ya4ey")]
+[node name="OakTree228" parent="World/Trees" unique_id=1873173105 instance=ExtResource("5_ya4ey")]
 position = Vector2(940, 648)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree229" type="StaticBody2D" parent="World/Trees" unique_id=1991177578 instance=ExtResource("5_ya4ey")]
+[node name="OakTree229" parent="World/Trees" unique_id=1991177578 instance=ExtResource("5_ya4ey")]
 position = Vector2(1266, 643)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree230" type="StaticBody2D" parent="World/Trees" unique_id=380806343 instance=ExtResource("5_ya4ey")]
+[node name="OakTree230" parent="World/Trees" unique_id=380806343 instance=ExtResource("5_ya4ey")]
 position = Vector2(16, 681)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree231" type="StaticBody2D" parent="World/Trees" unique_id=1318857661 instance=ExtResource("5_ya4ey")]
+[node name="OakTree231" parent="World/Trees" unique_id=1318857661 instance=ExtResource("5_ya4ey")]
 position = Vector2(104, 675)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree232" type="StaticBody2D" parent="World/Trees" unique_id=1523675709 instance=ExtResource("5_ya4ey")]
+[node name="OakTree232" parent="World/Trees" unique_id=1523675709 instance=ExtResource("5_ya4ey")]
 position = Vector2(400, 671)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree233" type="StaticBody2D" parent="World/Trees" unique_id=285562913 instance=ExtResource("5_ya4ey")]
+[node name="OakTree233" parent="World/Trees" unique_id=285562913 instance=ExtResource("5_ya4ey")]
 position = Vector2(494, 680)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree234" type="StaticBody2D" parent="World/Trees" unique_id=2134403791 instance=ExtResource("5_ya4ey")]
+[node name="OakTree234" parent="World/Trees" unique_id=2134403791 instance=ExtResource("5_ya4ey")]
 position = Vector2(1211, 670)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree235" type="StaticBody2D" parent="World/Trees" unique_id=1436644731 instance=ExtResource("5_ya4ey")]
+[node name="OakTree235" parent="World/Trees" unique_id=1436644731 instance=ExtResource("5_ya4ey")]
 position = Vector2(1244, 676)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree236" type="StaticBody2D" parent="World/Trees" unique_id=119982403 instance=ExtResource("5_ya4ey")]
+[node name="OakTree236" parent="World/Trees" unique_id=119982403 instance=ExtResource("5_ya4ey")]
 position = Vector2(1271, 679)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree237" type="StaticBody2D" parent="World/Trees" unique_id=1644991972 instance=ExtResource("5_ya4ey")]
+[node name="OakTree237" parent="World/Trees" unique_id=1644991972 instance=ExtResource("5_ya4ey")]
 position = Vector2(33, 709)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree238" type="StaticBody2D" parent="World/Trees" unique_id=1048362516 instance=ExtResource("7_trceg")]
+[node name="PineTree238" parent="World/Trees" unique_id=1048362516 instance=ExtResource("7_trceg")]
 position = Vector2(347, 703)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree239" type="StaticBody2D" parent="World/Trees" unique_id=2048953293 instance=ExtResource("5_ya4ey")]
+[node name="OakTree239" parent="World/Trees" unique_id=2048953293 instance=ExtResource("5_ya4ey")]
 position = Vector2(462, 705)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree240" type="StaticBody2D" parent="World/Trees" unique_id=1717511915 instance=ExtResource("7_trceg")]
+[node name="PineTree240" parent="World/Trees" unique_id=1717511915 instance=ExtResource("7_trceg")]
 position = Vector2(527, 698)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree241" type="StaticBody2D" parent="World/Trees" unique_id=274930741 instance=ExtResource("5_ya4ey")]
+[node name="OakTree241" parent="World/Trees" unique_id=274930741 instance=ExtResource("5_ya4ey")]
 position = Vector2(781, 700)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree242" type="StaticBody2D" parent="World/Trees" unique_id=1537430217 instance=ExtResource("5_ya4ey")]
+[node name="OakTree242" parent="World/Trees" unique_id=1537430217 instance=ExtResource("5_ya4ey")]
 position = Vector2(815, 705)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree243" type="StaticBody2D" parent="World/Trees" unique_id=1359887251 instance=ExtResource("7_trceg")]
+[node name="PineTree243" parent="World/Trees" unique_id=1359887251 instance=ExtResource("7_trceg")]
 position = Vector2(913, 701)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree244" type="StaticBody2D" parent="World/Trees" unique_id=1711160838 instance=ExtResource("5_ya4ey")]
+[node name="OakTree244" parent="World/Trees" unique_id=1711160838 instance=ExtResource("5_ya4ey")]
 position = Vector2(1240, 707)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree245" type="StaticBody2D" parent="World/Trees" unique_id=15396694 instance=ExtResource("5_ya4ey")]
+[node name="OakTree245" parent="World/Trees" unique_id=15396694 instance=ExtResource("5_ya4ey")]
 position = Vector2(1, 737)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree246" type="StaticBody2D" parent="World/Trees" unique_id=1361488874 instance=ExtResource("5_ya4ey")]
+[node name="OakTree246" parent="World/Trees" unique_id=1361488874 instance=ExtResource("5_ya4ey")]
 position = Vector2(34, 735)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree247" type="StaticBody2D" parent="World/Trees" unique_id=1270569972 instance=ExtResource("5_ya4ey")]
+[node name="OakTree247" parent="World/Trees" unique_id=1270569972 instance=ExtResource("5_ya4ey")]
 position = Vector2(122, 726)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree248" type="StaticBody2D" parent="World/Trees" unique_id=1017024487 instance=ExtResource("7_trceg")]
+[node name="PineTree248" parent="World/Trees" unique_id=1017024487 instance=ExtResource("7_trceg")]
 position = Vector2(905, 722)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree249" type="StaticBody2D" parent="World/Trees" unique_id=405839474 instance=ExtResource("5_ya4ey")]
+[node name="OakTree249" parent="World/Trees" unique_id=405839474 instance=ExtResource("5_ya4ey")]
 position = Vector2(1202, 737)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree250" type="StaticBody2D" parent="World/Trees" unique_id=1609044589 instance=ExtResource("5_ya4ey")]
+[node name="OakTree250" parent="World/Trees" unique_id=1609044589 instance=ExtResource("5_ya4ey")]
 position = Vector2(1265, 730)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree251" type="StaticBody2D" parent="World/Trees" unique_id=1755153095 instance=ExtResource("5_ya4ey")]
+[node name="OakTree251" parent="World/Trees" unique_id=1755153095 instance=ExtResource("5_ya4ey")]
 position = Vector2(16, 761)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree252" type="StaticBody2D" parent="World/Trees" unique_id=164795519 instance=ExtResource("7_trceg")]
+[node name="PineTree252" parent="World/Trees" unique_id=164795519 instance=ExtResource("7_trceg")]
 position = Vector2(44, 766)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree253" type="StaticBody2D" parent="World/Trees" unique_id=514730814 instance=ExtResource("7_trceg")]
+[node name="PineTree253" parent="World/Trees" unique_id=514730814 instance=ExtResource("7_trceg")]
 position = Vector2(1247, 757)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree254" type="StaticBody2D" parent="World/Trees" unique_id=1145330875 instance=ExtResource("5_ya4ey")]
+[node name="OakTree254" parent="World/Trees" unique_id=1145330875 instance=ExtResource("5_ya4ey")]
 position = Vector2(16, 783)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree255" type="StaticBody2D" parent="World/Trees" unique_id=238492734 instance=ExtResource("5_ya4ey")]
+[node name="OakTree255" parent="World/Trees" unique_id=238492734 instance=ExtResource("5_ya4ey")]
 position = Vector2(46, 792)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree256" type="StaticBody2D" parent="World/Trees" unique_id=249897670 instance=ExtResource("7_trceg")]
+[node name="PineTree256" parent="World/Trees" unique_id=249897670 instance=ExtResource("7_trceg")]
 position = Vector2(161, 789)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree257" type="StaticBody2D" parent="World/Trees" unique_id=1358879604 instance=ExtResource("7_trceg")]
+[node name="PineTree257" parent="World/Trees" unique_id=1358879604 instance=ExtResource("7_trceg")]
 position = Vector2(278, 778)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree258" type="StaticBody2D" parent="World/Trees" unique_id=531510840 instance=ExtResource("7_trceg")]
+[node name="PineTree258" parent="World/Trees" unique_id=531510840 instance=ExtResource("7_trceg")]
 position = Vector2(303, 793)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree259" type="StaticBody2D" parent="World/Trees" unique_id=1741157618 instance=ExtResource("7_trceg")]
+[node name="PineTree259" parent="World/Trees" unique_id=1741157618 instance=ExtResource("7_trceg")]
 position = Vector2(349, 778)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree260" type="StaticBody2D" parent="World/Trees" unique_id=788959525 instance=ExtResource("7_trceg")]
+[node name="PineTree260" parent="World/Trees" unique_id=788959525 instance=ExtResource("7_trceg")]
 position = Vector2(372, 786)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree261" type="StaticBody2D" parent="World/Trees" unique_id=1619435170 instance=ExtResource("7_trceg")]
+[node name="PineTree261" parent="World/Trees" unique_id=1619435170 instance=ExtResource("7_trceg")]
 position = Vector2(404, 779)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree262" type="StaticBody2D" parent="World/Trees" unique_id=1851924377 instance=ExtResource("5_ya4ey")]
+[node name="OakTree262" parent="World/Trees" unique_id=1851924377 instance=ExtResource("5_ya4ey")]
 position = Vector2(457, 785)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree263" type="StaticBody2D" parent="World/Trees" unique_id=2054548042 instance=ExtResource("7_trceg")]
+[node name="PineTree263" parent="World/Trees" unique_id=2054548042 instance=ExtResource("7_trceg")]
 position = Vector2(766, 784)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree264" type="StaticBody2D" parent="World/Trees" unique_id=260459714 instance=ExtResource("7_trceg")]
+[node name="PineTree264" parent="World/Trees" unique_id=260459714 instance=ExtResource("7_trceg")]
 position = Vector2(1004, 783)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree265" type="StaticBody2D" parent="World/Trees" unique_id=164364747 instance=ExtResource("7_trceg")]
+[node name="PineTree265" parent="World/Trees" unique_id=164364747 instance=ExtResource("7_trceg")]
 position = Vector2(1237, 791)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree266" type="StaticBody2D" parent="World/Trees" unique_id=1318916253 instance=ExtResource("7_trceg")]
+[node name="PineTree266" parent="World/Trees" unique_id=1318916253 instance=ExtResource("7_trceg")]
 position = Vector2(1275, 795)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree267" type="StaticBody2D" parent="World/Trees" unique_id=1292694374 instance=ExtResource("5_ya4ey")]
+[node name="OakTree267" parent="World/Trees" unique_id=1292694374 instance=ExtResource("5_ya4ey")]
 position = Vector2(4, 813)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree268" type="StaticBody2D" parent="World/Trees" unique_id=478516720 instance=ExtResource("7_trceg")]
+[node name="PineTree268" parent="World/Trees" unique_id=478516720 instance=ExtResource("7_trceg")]
 position = Vector2(38, 821)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree269" type="StaticBody2D" parent="World/Trees" unique_id=79241544 instance=ExtResource("5_ya4ey")]
+[node name="OakTree269" parent="World/Trees" unique_id=79241544 instance=ExtResource("5_ya4ey")]
 position = Vector2(185, 820)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree270" type="StaticBody2D" parent="World/Trees" unique_id=524689537 instance=ExtResource("5_ya4ey")]
+[node name="OakTree270" parent="World/Trees" unique_id=524689537 instance=ExtResource("5_ya4ey")]
 position = Vector2(433, 807)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree271" type="StaticBody2D" parent="World/Trees" unique_id=1326098861 instance=ExtResource("5_ya4ey")]
+[node name="OakTree271" parent="World/Trees" unique_id=1326098861 instance=ExtResource("5_ya4ey")]
 position = Vector2(486, 816)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree272" type="StaticBody2D" parent="World/Trees" unique_id=979611732 instance=ExtResource("7_trceg")]
+[node name="PineTree272" parent="World/Trees" unique_id=979611732 instance=ExtResource("7_trceg")]
 position = Vector2(692, 820)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree273" type="StaticBody2D" parent="World/Trees" unique_id=1516915345 instance=ExtResource("5_ya4ey")]
+[node name="OakTree273" parent="World/Trees" unique_id=1516915345 instance=ExtResource("5_ya4ey")]
 position = Vector2(759, 823)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree274" type="StaticBody2D" parent="World/Trees" unique_id=261959528 instance=ExtResource("5_ya4ey")]
+[node name="OakTree274" parent="World/Trees" unique_id=261959528 instance=ExtResource("5_ya4ey")]
 position = Vector2(846, 811)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree275" type="StaticBody2D" parent="World/Trees" unique_id=1516841457 instance=ExtResource("5_ya4ey")]
+[node name="OakTree275" parent="World/Trees" unique_id=1516841457 instance=ExtResource("5_ya4ey")]
 position = Vector2(1087, 815)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree276" type="StaticBody2D" parent="World/Trees" unique_id=1158597571 instance=ExtResource("7_trceg")]
+[node name="PineTree276" parent="World/Trees" unique_id=1158597571 instance=ExtResource("7_trceg")]
 position = Vector2(1205, 807)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree277" type="StaticBody2D" parent="World/Trees" unique_id=120642031 instance=ExtResource("5_ya4ey")]
+[node name="OakTree277" parent="World/Trees" unique_id=120642031 instance=ExtResource("5_ya4ey")]
 position = Vector2(1249, 812)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree278" type="StaticBody2D" parent="World/Trees" unique_id=1213069715 instance=ExtResource("5_ya4ey")]
+[node name="OakTree278" parent="World/Trees" unique_id=1213069715 instance=ExtResource("5_ya4ey")]
 position = Vector2(1277, 817)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree279" type="StaticBody2D" parent="World/Trees" unique_id=2073763318 instance=ExtResource("5_ya4ey")]
+[node name="OakTree279" parent="World/Trees" unique_id=2073763318 instance=ExtResource("5_ya4ey")]
 position = Vector2(15, 845)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree280" type="StaticBody2D" parent="World/Trees" unique_id=109813356 instance=ExtResource("5_ya4ey")]
+[node name="OakTree280" parent="World/Trees" unique_id=109813356 instance=ExtResource("5_ya4ey")]
 position = Vector2(69, 833)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree281" type="StaticBody2D" parent="World/Trees" unique_id=706500984 instance=ExtResource("5_ya4ey")]
+[node name="OakTree281" parent="World/Trees" unique_id=706500984 instance=ExtResource("5_ya4ey")]
 position = Vector2(301, 833)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree282" type="StaticBody2D" parent="World/Trees" unique_id=1429265642 instance=ExtResource("5_ya4ey")]
+[node name="OakTree282" parent="World/Trees" unique_id=1429265642 instance=ExtResource("5_ya4ey")]
 position = Vector2(434, 846)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree283" type="StaticBody2D" parent="World/Trees" unique_id=916987367 instance=ExtResource("7_trceg")]
+[node name="PineTree283" parent="World/Trees" unique_id=916987367 instance=ExtResource("7_trceg")]
 position = Vector2(486, 850)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree284" type="StaticBody2D" parent="World/Trees" unique_id=716978831 instance=ExtResource("5_ya4ey")]
+[node name="OakTree284" parent="World/Trees" unique_id=716978831 instance=ExtResource("5_ya4ey")]
 position = Vector2(577, 837)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree285" type="StaticBody2D" parent="World/Trees" unique_id=1006598688 instance=ExtResource("5_ya4ey")]
+[node name="OakTree285" parent="World/Trees" unique_id=1006598688 instance=ExtResource("5_ya4ey")]
 position = Vector2(641, 838)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree286" type="StaticBody2D" parent="World/Trees" unique_id=195723754 instance=ExtResource("5_ya4ey")]
+[node name="OakTree286" parent="World/Trees" unique_id=195723754 instance=ExtResource("5_ya4ey")]
 position = Vector2(665, 839)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree287" type="StaticBody2D" parent="World/Trees" unique_id=1567222990 instance=ExtResource("5_ya4ey")]
+[node name="OakTree287" parent="World/Trees" unique_id=1567222990 instance=ExtResource("5_ya4ey")]
 position = Vector2(942, 838)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree288" type="StaticBody2D" parent="World/Trees" unique_id=1937787847 instance=ExtResource("5_ya4ey")]
+[node name="OakTree288" parent="World/Trees" unique_id=1937787847 instance=ExtResource("5_ya4ey")]
 position = Vector2(1239, 838)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree289" type="StaticBody2D" parent="World/Trees" unique_id=218598036 instance=ExtResource("7_trceg")]
+[node name="PineTree289" parent="World/Trees" unique_id=218598036 instance=ExtResource("7_trceg")]
 position = Vector2(1272, 850)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree290" type="StaticBody2D" parent="World/Trees" unique_id=306566306 instance=ExtResource("5_ya4ey")]
+[node name="OakTree290" parent="World/Trees" unique_id=306566306 instance=ExtResource("5_ya4ey")]
 position = Vector2(10, 872)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree291" type="StaticBody2D" parent="World/Trees" unique_id=1527891934 instance=ExtResource("5_ya4ey")]
+[node name="OakTree291" parent="World/Trees" unique_id=1527891934 instance=ExtResource("5_ya4ey")]
 position = Vector2(47, 862)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree292" type="StaticBody2D" parent="World/Trees" unique_id=1432856917 instance=ExtResource("7_trceg")]
+[node name="PineTree292" parent="World/Trees" unique_id=1432856917 instance=ExtResource("7_trceg")]
 position = Vector2(71, 869)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree293" type="StaticBody2D" parent="World/Trees" unique_id=1531308633 instance=ExtResource("7_trceg")]
+[node name="PineTree293" parent="World/Trees" unique_id=1531308633 instance=ExtResource("7_trceg")]
 position = Vector2(99, 869)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree294" type="StaticBody2D" parent="World/Trees" unique_id=1609447019 instance=ExtResource("5_ya4ey")]
+[node name="OakTree294" parent="World/Trees" unique_id=1609447019 instance=ExtResource("5_ya4ey")]
 position = Vector2(138, 867)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree295" type="StaticBody2D" parent="World/Trees" unique_id=1886246096 instance=ExtResource("5_ya4ey")]
+[node name="OakTree295" parent="World/Trees" unique_id=1886246096 instance=ExtResource("5_ya4ey")]
 position = Vector2(190, 868)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree296" type="StaticBody2D" parent="World/Trees" unique_id=848297304 instance=ExtResource("5_ya4ey")]
+[node name="OakTree296" parent="World/Trees" unique_id=848297304 instance=ExtResource("5_ya4ey")]
 position = Vector2(224, 870)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree297" type="StaticBody2D" parent="World/Trees" unique_id=590316607 instance=ExtResource("5_ya4ey")]
+[node name="OakTree297" parent="World/Trees" unique_id=590316607 instance=ExtResource("5_ya4ey")]
 position = Vector2(253, 869)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree298" type="StaticBody2D" parent="World/Trees" unique_id=41021031 instance=ExtResource("5_ya4ey")]
+[node name="OakTree298" parent="World/Trees" unique_id=41021031 instance=ExtResource("5_ya4ey")]
 position = Vector2(313, 871)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree299" type="StaticBody2D" parent="World/Trees" unique_id=1077049368 instance=ExtResource("7_trceg")]
+[node name="PineTree299" parent="World/Trees" unique_id=1077049368 instance=ExtResource("7_trceg")]
 position = Vector2(372, 872)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree300" type="StaticBody2D" parent="World/Trees" unique_id=605396544 instance=ExtResource("5_ya4ey")]
+[node name="OakTree300" parent="World/Trees" unique_id=605396544 instance=ExtResource("5_ya4ey")]
 position = Vector2(403, 871)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree301" type="StaticBody2D" parent="World/Trees" unique_id=378101167 instance=ExtResource("7_trceg")]
+[node name="PineTree301" parent="World/Trees" unique_id=378101167 instance=ExtResource("7_trceg")]
 position = Vector2(428, 869)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree302" type="StaticBody2D" parent="World/Trees" unique_id=1162782778 instance=ExtResource("5_ya4ey")]
+[node name="OakTree302" parent="World/Trees" unique_id=1162782778 instance=ExtResource("5_ya4ey")]
 position = Vector2(455, 869)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree303" type="StaticBody2D" parent="World/Trees" unique_id=185312205 instance=ExtResource("7_trceg")]
+[node name="PineTree303" parent="World/Trees" unique_id=185312205 instance=ExtResource("7_trceg")]
 position = Vector2(527, 874)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree304" type="StaticBody2D" parent="World/Trees" unique_id=314454514 instance=ExtResource("7_trceg")]
+[node name="PineTree304" parent="World/Trees" unique_id=314454514 instance=ExtResource("7_trceg")]
 position = Vector2(612, 867)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree305" type="StaticBody2D" parent="World/Trees" unique_id=797537310 instance=ExtResource("7_trceg")]
+[node name="PineTree305" parent="World/Trees" unique_id=797537310 instance=ExtResource("7_trceg")]
 position = Vector2(645, 866)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree306" type="StaticBody2D" parent="World/Trees" unique_id=741224913 instance=ExtResource("5_ya4ey")]
+[node name="OakTree306" parent="World/Trees" unique_id=741224913 instance=ExtResource("5_ya4ey")]
 position = Vector2(665, 877)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree307" type="StaticBody2D" parent="World/Trees" unique_id=1462624917 instance=ExtResource("7_trceg")]
+[node name="PineTree307" parent="World/Trees" unique_id=1462624917 instance=ExtResource("7_trceg")]
 position = Vector2(696, 868)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="PineTree308" type="StaticBody2D" parent="World/Trees" unique_id=1081600496 instance=ExtResource("7_trceg")]
+[node name="PineTree308" parent="World/Trees" unique_id=1081600496 instance=ExtResource("7_trceg")]
 position = Vector2(722, 870)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree309" type="StaticBody2D" parent="World/Trees" unique_id=28765470 instance=ExtResource("5_ya4ey")]
+[node name="OakTree309" parent="World/Trees" unique_id=28765470 instance=ExtResource("5_ya4ey")]
 position = Vector2(761, 877)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree310" type="StaticBody2D" parent="World/Trees" unique_id=1741979964 instance=ExtResource("5_ya4ey")]
+[node name="OakTree310" parent="World/Trees" unique_id=1741979964 instance=ExtResource("5_ya4ey")]
 position = Vector2(816, 867)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree311" type="StaticBody2D" parent="World/Trees" unique_id=1445855162 instance=ExtResource("5_ya4ey")]
+[node name="OakTree311" parent="World/Trees" unique_id=1445855162 instance=ExtResource("5_ya4ey")]
 position = Vector2(938, 877)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree312" type="StaticBody2D" parent="World/Trees" unique_id=1565429046 instance=ExtResource("5_ya4ey")]
+[node name="OakTree312" parent="World/Trees" unique_id=1565429046 instance=ExtResource("5_ya4ey")]
 position = Vector2(1003, 871)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="PineTree313" type="StaticBody2D" parent="World/Trees" unique_id=116266272 instance=ExtResource("7_trceg")]
+[node name="PineTree313" parent="World/Trees" unique_id=116266272 instance=ExtResource("7_trceg")]
 position = Vector2(1057, 876)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-kind = "pine"
 
-[node name="OakTree314" type="StaticBody2D" parent="World/Trees" unique_id=1475030481 instance=ExtResource("5_ya4ey")]
+[node name="OakTree314" parent="World/Trees" unique_id=1475030481 instance=ExtResource("5_ya4ey")]
 position = Vector2(1112, 868)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree315" type="StaticBody2D" parent="World/Trees" unique_id=607037219 instance=ExtResource("5_ya4ey")]
+[node name="OakTree315" parent="World/Trees" unique_id=607037219 instance=ExtResource("5_ya4ey")]
 position = Vector2(1150, 868)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree316" type="StaticBody2D" parent="World/Trees" unique_id=2055404735 instance=ExtResource("5_ya4ey")]
+[node name="OakTree316" parent="World/Trees" unique_id=2055404735 instance=ExtResource("5_ya4ey")]
 position = Vector2(1188, 867)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
 
-[node name="OakTree317" type="StaticBody2D" parent="World/Trees" unique_id=1117065288 instance=ExtResource("5_ya4ey")]
+[node name="OakTree317" parent="World/Trees" unique_id=1117065288 instance=ExtResource("5_ya4ey")]
 position = Vector2(1234, 871)
-collision_mask = 0
-script = ExtResource("6_eb6dy")
-
-[node name="Node2D" type="Node2D" parent="World" unique_id=656621541]
 
 [node name="Bushes" type="Node2D" parent="World" unique_id=1216634197]
 y_sort_enabled = true
 
-[node name="Bush0" type="Area2D" parent="World/Bushes" unique_id=229778195 instance=ExtResource("8_a8y0u")]
+[node name="Bush0" parent="World/Bushes" unique_id=229778195 instance=ExtResource("8_a8y0u")]
 position = Vector2(799, 312)
-collision_layer = 0
-collision_mask = 2
-script = ExtResource("9_jkv2x")
 
-[node name="Bush1" type="Area2D" parent="World/Bushes" unique_id=3775137 instance=ExtResource("8_a8y0u")]
+[node name="Bush1" parent="World/Bushes" unique_id=3775137 instance=ExtResource("8_a8y0u")]
 position = Vector2(92, 342)
-collision_layer = 0
-collision_mask = 2
-script = ExtResource("9_jkv2x")
 
-[node name="Bush2" type="Area2D" parent="World/Bushes" unique_id=758349941 instance=ExtResource("8_a8y0u")]
+[node name="Bush2" parent="World/Bushes" unique_id=758349941 instance=ExtResource("8_a8y0u")]
 position = Vector2(380, 284)
-collision_layer = 0
-collision_mask = 2
-script = ExtResource("9_jkv2x")
 
-[node name="Bush3" type="Area2D" parent="World/Bushes" unique_id=496856642 instance=ExtResource("8_a8y0u")]
+[node name="Bush3" parent="World/Bushes" unique_id=496856642 instance=ExtResource("8_a8y0u")]
 position = Vector2(1177, 783)
-collision_layer = 0
-collision_mask = 2
-script = ExtResource("9_jkv2x")
 
-[node name="Bush4" type="Area2D" parent="World/Bushes" unique_id=15671687 instance=ExtResource("8_a8y0u")]
+[node name="Bush4" parent="World/Bushes" unique_id=15671687 instance=ExtResource("8_a8y0u")]
 position = Vector2(118, 795)
-collision_layer = 0
-collision_mask = 2
-script = ExtResource("9_jkv2x")
 
-[node name="Bush5" type="Area2D" parent="World/Bushes" unique_id=1699221011 instance=ExtResource("8_a8y0u")]
+[node name="Bush5" parent="World/Bushes" unique_id=1699221011 instance=ExtResource("8_a8y0u")]
 position = Vector2(724, 186)
-collision_layer = 0
-collision_mask = 2
-script = ExtResource("9_jkv2x")
 
-[node name="Bush6" type="Area2D" parent="World/Bushes" unique_id=1019061772 instance=ExtResource("8_a8y0u")]
+[node name="Bush6" parent="World/Bushes" unique_id=1019061772 instance=ExtResource("8_a8y0u")]
 position = Vector2(765, 425)
-collision_layer = 0
-collision_mask = 2
-script = ExtResource("9_jkv2x")
 
-[node name="Bush7" type="Area2D" parent="World/Bushes" unique_id=2083807548 instance=ExtResource("8_a8y0u")]
+[node name="Bush7" parent="World/Bushes" unique_id=2083807548 instance=ExtResource("8_a8y0u")]
 position = Vector2(641, 507)
-collision_layer = 0
-collision_mask = 2
-script = ExtResource("9_jkv2x")
 
-[node name="Bush8" type="Area2D" parent="World/Bushes" unique_id=459368550 instance=ExtResource("8_a8y0u")]
+[node name="Bush8" parent="World/Bushes" unique_id=459368550 instance=ExtResource("8_a8y0u")]
 position = Vector2(796, 747)
-collision_layer = 0
-collision_mask = 2
-script = ExtResource("9_jkv2x")
 
-[node name="Bush9" type="Area2D" parent="World/Bushes" unique_id=1412527859 instance=ExtResource("8_a8y0u")]
+[node name="Bush9" parent="World/Bushes" unique_id=1412527859 instance=ExtResource("8_a8y0u")]
 position = Vector2(1172, 245)
-collision_layer = 0
-collision_mask = 2
-script = ExtResource("9_jkv2x")
 
-[node name="Bush10" type="Area2D" parent="World/Bushes" unique_id=1988349346 instance=ExtResource("8_a8y0u")]
+[node name="Bush10" parent="World/Bushes" unique_id=1988349346 instance=ExtResource("8_a8y0u")]
 position = Vector2(756, 225)
-collision_layer = 0
-collision_mask = 2
-script = ExtResource("9_jkv2x")
 
-[node name="Bush11" type="Area2D" parent="World/Bushes" unique_id=9967666 instance=ExtResource("8_a8y0u")]
+[node name="Bush11" parent="World/Bushes" unique_id=9967666 instance=ExtResource("8_a8y0u")]
 position = Vector2(85, 311)
-collision_layer = 0
-collision_mask = 2
-script = ExtResource("9_jkv2x")
 
-[node name="Bush12" type="Area2D" parent="World/Bushes" unique_id=17167594 instance=ExtResource("8_a8y0u")]
+[node name="Bush12" parent="World/Bushes" unique_id=17167594 instance=ExtResource("8_a8y0u")]
 position = Vector2(90, 219)
-collision_layer = 0
-collision_mask = 2
-script = ExtResource("9_jkv2x")
 
-[node name="Bush13" type="Area2D" parent="World/Bushes" unique_id=822089523 instance=ExtResource("8_a8y0u")]
+[node name="Bush13" parent="World/Bushes" unique_id=822089523 instance=ExtResource("8_a8y0u")]
 position = Vector2(85, 850)
-collision_layer = 0
-collision_mask = 2
-script = ExtResource("9_jkv2x")
 
-[node name="Bush14" type="Area2D" parent="World/Bushes" unique_id=776703050 instance=ExtResource("8_a8y0u")]
+[node name="Bush14" parent="World/Bushes" unique_id=776703050 instance=ExtResource("8_a8y0u")]
 position = Vector2(156, 844)
-collision_layer = 0
-collision_mask = 2
-script = ExtResource("9_jkv2x")
 
-[node name="Bush15" type="Area2D" parent="World/Bushes" unique_id=71384688 instance=ExtResource("8_a8y0u")]
+[node name="Bush15" parent="World/Bushes" unique_id=71384688 instance=ExtResource("8_a8y0u")]
 position = Vector2(343, 541)
-collision_layer = 0
-collision_mask = 2
-script = ExtResource("9_jkv2x")
 
-[node name="Bush16" type="Area2D" parent="World/Bushes" unique_id=301032930 instance=ExtResource("8_a8y0u")]
+[node name="Bush16" parent="World/Bushes" unique_id=301032930 instance=ExtResource("8_a8y0u")]
 position = Vector2(1040, 779)
-collision_layer = 0
-collision_mask = 2
-script = ExtResource("9_jkv2x")
 
-[node name="Bush17" type="Area2D" parent="World/Bushes" unique_id=1467979177 instance=ExtResource("8_a8y0u")]
+[node name="Bush17" parent="World/Bushes" unique_id=1467979177 instance=ExtResource("8_a8y0u")]
 position = Vector2(674, 238)
-collision_layer = 0
-collision_mask = 2
-script = ExtResource("9_jkv2x")
 
-[node name="Bush18" type="Area2D" parent="World/Bushes" unique_id=289161122 instance=ExtResource("8_a8y0u")]
+[node name="Bush18" parent="World/Bushes" unique_id=289161122 instance=ExtResource("8_a8y0u")]
 position = Vector2(423, 445)
-collision_layer = 0
-collision_mask = 2
-script = ExtResource("9_jkv2x")
 
-[node name="Bush19" type="Area2D" parent="World/Bushes" unique_id=859404980 instance=ExtResource("8_a8y0u")]
+[node name="Bush19" parent="World/Bushes" unique_id=859404980 instance=ExtResource("8_a8y0u")]
 position = Vector2(330, 125)
-collision_layer = 0
-collision_mask = 2
-script = ExtResource("9_jkv2x")
 
-[node name="Bush20" type="Area2D" parent="World/Bushes" unique_id=1231825698 instance=ExtResource("8_a8y0u")]
+[node name="Bush20" parent="World/Bushes" unique_id=1231825698 instance=ExtResource("8_a8y0u")]
 position = Vector2(834, 529)
-collision_layer = 0
-collision_mask = 2
-script = ExtResource("9_jkv2x")
 
-[node name="Bush21" type="Area2D" parent="World/Bushes" unique_id=19090106 instance=ExtResource("8_a8y0u")]
+[node name="Bush21" parent="World/Bushes" unique_id=19090106 instance=ExtResource("8_a8y0u")]
 position = Vector2(915, 182)
-collision_layer = 0
-collision_mask = 2
-script = ExtResource("9_jkv2x")
 
-[node name="Bush22" type="Area2D" parent="World/Bushes" unique_id=535274821 instance=ExtResource("8_a8y0u")]
+[node name="Bush22" parent="World/Bushes" unique_id=535274821 instance=ExtResource("8_a8y0u")]
 position = Vector2(1146, 773)
-collision_layer = 0
-collision_mask = 2
-script = ExtResource("9_jkv2x")
 
-[node name="Bush23" type="Area2D" parent="World/Bushes" unique_id=121176961 instance=ExtResource("8_a8y0u")]
+[node name="Bush23" parent="World/Bushes" unique_id=121176961 instance=ExtResource("8_a8y0u")]
 position = Vector2(498, 228)
-collision_layer = 0
-collision_mask = 2
-script = ExtResource("9_jkv2x")
 
-[node name="Bush24" type="Area2D" parent="World/Bushes" unique_id=881217050 instance=ExtResource("8_a8y0u")]
+[node name="Bush24" parent="World/Bushes" unique_id=881217050 instance=ExtResource("8_a8y0u")]
 position = Vector2(176, 141)
-collision_layer = 0
-collision_mask = 2
-script = ExtResource("9_jkv2x")
 
-[node name="Bush25" type="Area2D" parent="World/Bushes" unique_id=202600341 instance=ExtResource("8_a8y0u")]
+[node name="Bush25" parent="World/Bushes" unique_id=202600341 instance=ExtResource("8_a8y0u")]
 position = Vector2(429, 148)
-collision_layer = 0
-collision_mask = 2
-script = ExtResource("9_jkv2x")
 
-[node name="Bush26" type="Area2D" parent="World/Bushes" unique_id=908607986 instance=ExtResource("8_a8y0u")]
+[node name="Bush26" parent="World/Bushes" unique_id=908607986 instance=ExtResource("8_a8y0u")]
 position = Vector2(1074, 602)
-collision_layer = 0
-collision_mask = 2
-script = ExtResource("9_jkv2x")
 
-[node name="Bush27" type="Area2D" parent="World/Bushes" unique_id=679521814 instance=ExtResource("8_a8y0u")]
+[node name="Bush27" parent="World/Bushes" unique_id=679521814 instance=ExtResource("8_a8y0u")]
 position = Vector2(559, 225)
-collision_layer = 0
-collision_mask = 2
-script = ExtResource("9_jkv2x")
 
 [node name="Rocks" type="Node2D" parent="World" unique_id=2134673041]
 y_sort_enabled = true
 
-[node name="Rock0" type="StaticBody2D" parent="World/Rocks" unique_id=618403653 instance=ExtResource("10_jbj1t")]
+[node name="Rock0" parent="World/Rocks" unique_id=618403653 instance=ExtResource("10_jbj1t")]
 position = Vector2(948, 516)
-collision_mask = 0
 
-[node name="Rock1" type="StaticBody2D" parent="World/Rocks" unique_id=801882968 instance=ExtResource("10_jbj1t")]
+[node name="Rock1" parent="World/Rocks" unique_id=801882968 instance=ExtResource("10_jbj1t")]
 position = Vector2(160, 438)
-collision_mask = 0
 
-[node name="Rock2" type="StaticBody2D" parent="World/Rocks" unique_id=974482154 instance=ExtResource("10_jbj1t")]
+[node name="Rock2" parent="World/Rocks" unique_id=974482154 instance=ExtResource("10_jbj1t")]
 position = Vector2(351, 731)
-collision_mask = 0
 
-[node name="Rock3" type="StaticBody2D" parent="World/Rocks" unique_id=293672105 instance=ExtResource("10_jbj1t")]
+[node name="Rock3" parent="World/Rocks" unique_id=293672105 instance=ExtResource("10_jbj1t")]
 position = Vector2(345, 827)
-collision_mask = 0
 
-[node name="Rock4" type="StaticBody2D" parent="World/Rocks" unique_id=1581094511 instance=ExtResource("10_jbj1t")]
+[node name="Rock4" parent="World/Rocks" unique_id=1581094511 instance=ExtResource("10_jbj1t")]
 position = Vector2(243, 512)
-collision_mask = 0
 
-[node name="Rock5" type="StaticBody2D" parent="World/Rocks" unique_id=565533568 instance=ExtResource("10_jbj1t")]
+[node name="Rock5" parent="World/Rocks" unique_id=565533568 instance=ExtResource("10_jbj1t")]
 position = Vector2(941, 549)
-collision_mask = 0
 
-[node name="Rock6" type="StaticBody2D" parent="World/Rocks" unique_id=1052140999 instance=ExtResource("10_jbj1t")]
+[node name="Rock6" parent="World/Rocks" unique_id=1052140999 instance=ExtResource("10_jbj1t")]
 position = Vector2(220, 530)
-collision_mask = 0
 
-[node name="Rock7" type="StaticBody2D" parent="World/Rocks" unique_id=1602117643 instance=ExtResource("10_jbj1t")]
+[node name="Rock7" parent="World/Rocks" unique_id=1602117643 instance=ExtResource("10_jbj1t")]
 position = Vector2(119, 430)
-collision_mask = 0
 
-[node name="Rock8" type="StaticBody2D" parent="World/Rocks" unique_id=442160004 instance=ExtResource("10_jbj1t")]
+[node name="Rock8" parent="World/Rocks" unique_id=442160004 instance=ExtResource("10_jbj1t")]
 position = Vector2(675, 547)
-collision_mask = 0
 
 [node name="Camps" type="Node2D" parent="World" unique_id=2113873793]
 unique_name_in_owner = true
